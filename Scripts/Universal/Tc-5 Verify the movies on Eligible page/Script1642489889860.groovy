@@ -26,13 +26,14 @@ WebUI.click(findTestObject('Object Repository/eligible movie/Page_Universal All-
 
 //WebUI.scrollToElement(findTestObject('Object Repository/eligible movie/Page_Universal All-Access Rewards  Get Rewa_700d57/mat-row_Trolls Holiday in HarmonyReceipt Up_3e0fe5'),
 //0)
-WebUI.verifyTextPresent('Title', true)
-
-WebUI.verifyTextPresent('Validation Type', true)
-
-WebUI.verifyTextPresent('Format', true)
-
-WebUI.verifyTextPresent('UPC', true)
+//WebUI.scrollToPosition(999, 999)
+//WebUI.verifyTextPresent('Title', true)
+//
+//WebUI.verifyTextPresent('Validation Type', true)
+//
+//WebUI.verifyTextPresent('Format', true)
+//
+//WebUI.verifyTextPresent('UPC', true)
 
 //WebUI.scrollToElement(findTestObject('Object Repository/eligible movie/Page_Universal All-Access Rewards  Get Rewa_700d57/mat-row_Trolls Holiday in HarmonyReceipt Up_3e0fe5'),
 //0)
@@ -41,16 +42,17 @@ WebUI.verifyTextPresent('UPC', true)
 //WebUI.click(findTestObject('Object Repository/eligible movie/Page_Universal All-Access Rewards  Get Rewa_700d57/mat-cell_Trolls Holiday in Harmony'))
 WebUI.delay(2)
 
-WebUI.scrollToPosition(99, 99, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.scrollToPosition(999, 999, FailureHandling.CONTINUE_ON_FAILURE)
+boolean flag=WebUI.verifyTextPresent(title,true, FailureHandling.CONTINUE_ON_FAILURE)
+System.out.println(flag)
+if (WebUI.verifyTextPresent(title, false, FailureHandling.CONTINUE_ON_FAILURE)) {
+    WebUI.verifyTextPresent(Validation_type, true, FailureHandling.CONTINUE_ON_FAILURE)
 
-if (WebUI.verifyTextPresent(title, true)) {
-    WebUI.verifyTextPresent(Validation_type, true)
+    WebUI.verifyTextPresent(format, true,FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.verifyTextPresent(format, true)
+    WebUI.verifyTextPresent(UPC, true,FailureHandling.CONTINUE_ON_FAILURE)
 
-    WebUI.verifyTextPresent(UPC, true)
-
-    WebUI.takeScreenshot('/home/knoldus/Katalon Studio/ssss.png')
+    WebUI.takeScreenshot('/home/knoldus/Katalon Studio/sll.png')
 } else {
     WebUI.closeBrowser()
 }

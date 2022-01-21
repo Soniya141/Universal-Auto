@@ -17,27 +17,3 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Universal/Login/TC-3 Login with Director'), [('Email') : 'test3004@yopmail.com', ('Pswrd') : '3tl@testing'], 
-    FailureHandling.STOP_ON_FAILURE)
-
-WebUI.delay(3)
-
-WebUI.click(findTestObject('Object Repository/Universal Staging/Earn points page'))
-
-//WebUI.click(findTestObject('Object Repository/Universal Staging/Earn point popups'), FailureHandling.CONTINUE_ON_FAILURE)
-//WebUI.dismissAlert()
-WebUI.scrollToPosition(99999, 99999, FailureHandling.CONTINUE_ON_FAILURE)
-
-while (!(WebUI.verifyElementPresent(findTestObject('Object Repository/Universal Staging/Earn points all shown button'), 
-    10, FailureHandling.CONTINUE_ON_FAILURE))) {
-    WebUI.scrollToPosition(99999, 99999, FailureHandling.CONTINUE_ON_FAILURE)
-
-    if (WebUI.verifyTextPresent(short_des1, true, FailureHandling.CONTINUE_ON_FAILURE)) {
-        System.out.println('Text found')
-
-        WebUI.closeBrowser()
-    } else {
-        WebUI.click(findTestObject('Universal-Contest entry/View More button'))
-    }
-}
-

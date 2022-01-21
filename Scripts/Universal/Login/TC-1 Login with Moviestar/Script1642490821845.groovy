@@ -13,29 +13,34 @@ import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword as WebUIAbstractKeyword
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+
 WebUI.openBrowser('')
 
 WebUI.setViewPortSize(1920, 1080)
+
 WebUI.navigateToUrl('https://universal.3tlstaging.com/home')
+
 WebUI.delay(5)
+
 WebUI.maximizeWindow()
-if (WebUI.verifyTextPresent('REGISTER / LOGIN', true, FailureHandling.STOP_ON_FAILURE)){
-		WebUI.click(findTestObject('Universal Staging/a_Register  Login'))
 
-		WebUI.setText(findTestObject('Universal Staging/input_USERNAME OR EMAIL_mat-input-0'),
-			Email)
+if (WebUI.verifyTextPresent('REGISTER / LOGIN', true, FailureHandling.STOP_ON_FAILURE)) {
+    WebUI.click(findTestObject('Universal Staging/a_Register  Login'))
 
-		WebUI.setText(findTestObject('Universal Staging/input_PASSWORD_mat-input-1'),
-			Pswrd)
+    WebUI.setText(findTestObject('Universal Staging/input_USERNAME OR EMAIL_mat-input-0'), Email)
 
-		WebUI.click(findTestObject('Universal Staging/button_Login'))
-		
-}else {
-	WebUI.closeBrowser()
+    WebUI.setText(findTestObject('Universal Staging/input_PASSWORD_mat-input-1'), Pswrd)
 
+    WebUI.click(findTestObject('Universal Staging/button_Login'))
+} else {
+    WebUI.closeBrowser()
 }
+
 WebUI.delay(5)
-WebUI.takeScreenshot("/home/knoldus/Katalon Studio/Login.png")
+
+WebUI.takeScreenshot('/home/knoldus/Katalon Studio/Login.png')
+
