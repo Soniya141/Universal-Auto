@@ -23,6 +23,7 @@ WebUI.setViewPortSize(1920, 1080)
 WebUI.navigateToUrl('https://universal.3tlstaging.com/home')
 WebUI.delay(5)
 WebUI.maximizeWindow()
+WebUI.waitForPageLoad(5)
 if (WebUI.verifyTextPresent('REGISTER / LOGIN', true, FailureHandling.STOP_ON_FAILURE)){
 		WebUI.click(findTestObject('Universal Staging/a_Register  Login'))
 
@@ -33,7 +34,11 @@ if (WebUI.verifyTextPresent('REGISTER / LOGIN', true, FailureHandling.STOP_ON_FA
 			Pswrd)
 
 		WebUI.click(findTestObject('Universal Staging/button_Login'))
-		
+		boolean flag=WebUI.verifyElementPresent(findTestObject('Universal Staging/Verify'), 0, FailureHandling.STOP_ON_FAILURE)
+		System.out.println("Login Successfully"  +flag)
+		result = WebUI.getText(findTestObject('Universal Staging/Verify'))
+		System.out.println(result)
+		WebUI.click(findTestObject("//div[@class='col text-sm-left text-center']/button"), FailureHandling.STOP_ON_FAILURE)
 }else {
 	WebUI.closeBrowser()
 

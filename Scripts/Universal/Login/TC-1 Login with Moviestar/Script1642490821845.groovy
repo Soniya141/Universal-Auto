@@ -27,7 +27,7 @@ WebUI.navigateToUrl('https://universal.3tlstaging.com/home')
 WebUI.delay(5)
 
 WebUI.maximizeWindow()
-
+WebUI.waitForPageLoad(5)
 if (WebUI.verifyTextPresent('REGISTER / LOGIN', true, FailureHandling.STOP_ON_FAILURE)) {
     WebUI.click(findTestObject('Universal Staging/a_Register  Login'))
 
@@ -36,11 +36,16 @@ if (WebUI.verifyTextPresent('REGISTER / LOGIN', true, FailureHandling.STOP_ON_FA
     WebUI.setText(findTestObject('Universal Staging/input_PASSWORD_mat-input-1'), Pswrd)
 
     WebUI.click(findTestObject('Universal Staging/button_Login'))
+	boolean flag=WebUI.verifyElementPresent(findTestObject('Universal Staging/Verify'), 0, FailureHandling.STOP_ON_FAILURE)
+	System.out.println("Login successfully"  +flag)
+	result = WebUI.getText(findTestObject('Universal Staging/Verify'))
+	System.out.println(result)
 } else {
     WebUI.closeBrowser()
 }
+	
+	//WebUI.verifyElementAttributeValue(findTestObject('Universal Staging/Verify'), Universal, Logo, 0)	
+//WebUI.delay(5)
 
-WebUI.delay(5)
-
-WebUI.takeScreenshot('/home/knoldus/Katalon Studio/Login.png')
+WebUI.takeScreenshot('/home/knoldus/Katalon Studio/Loginnnn.png')
 

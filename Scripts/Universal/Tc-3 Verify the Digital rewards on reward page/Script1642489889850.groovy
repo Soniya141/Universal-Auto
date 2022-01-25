@@ -21,9 +21,14 @@ WebUI.callTestCase(findTestCase('Universal/Login/TC-2 Login with Screenwriter'),
     FailureHandling.STOP_ON_FAILURE)
 
 WebUI.waitForPageLoad(3)
+//if (WebUI.verifyElementPresent(findTestObject('Object Repository/demo/Page_Universal All-Access Rewards  Get Rewa_700d57/mat-icon_close'),
+	//0)) {
+
+//WebUI.click(findTestObject('Object Repository/demo/Page_Universal All-Access Rewards  Get Rewa_700d57/mat-icon_close'))
 
 WebUI.click(findTestObject('Object Repository/Reward page/Page_Universal All-Access Rewards  Get Rewa_700d57/a_Rewards'))
-
+//WebUI.waitForElementPresent(findTestObject('Universal Staging/Verify'),
+	//0)
 WebUI.scrollToElement(findTestObject('Object Repository/Reward page/Page_Universal All-Access Rewards  Get Rewa_700d57/div_Show All'), 
     0, FailureHandling.STOP_ON_FAILURE)
 
@@ -42,9 +47,16 @@ if (WebUI.verifyTextPresent(Title, true, FailureHandling.CONTINUE_ON_FAILURE)) {
     if (WebUI.verifyTextPresent(Short_des, true, FailureHandling.CONTINUE_ON_FAILURE)) {
         //WebUI.click(findTestObject('Object Repository/Reward/Reedem now button'))
         WebUI.navigateToUrl('https://universal.3tlstaging.com/reward-preview/' + behavior_id)
-
-        // lick('Object Repository/Reward/Reedem Reward', FailureHandling.STOP_ON_FAILURE)
-        WebUI.takeScreenshot('/home/knoldus/Katalon Studio/sbs.png')
+		WebUI.waitForElementPresent(findTestObject('Object Repository/Universal Staging/Physical reward image'), 0)
+		
+		WebUI.click(findTestObject('Object Repository/Universal Staging/Redeem Now button click'), FailureHandling.STOP_ON_FAILURE)
+		
+		result = WebUI.getText(findTestObject('Object Repository/Universal Staging/Movie name display'))
+		
+			System.out.println(result)
+			WebUI.click(findTestObject("Object Repository/Universal Staging/Redeem Now buttonn"), FailureHandling.STOP_ON_FAILURE)
+			
+        WebUI.takeScreenshot('/home/knoldus/Katalon Studio/Digital rewards.png')
     }
 } else {
     WebUI.closeBrowser()

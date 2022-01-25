@@ -17,20 +17,26 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Universal/Login/TC-2 Login with Screenwriter'), [('Email') : 'ankit248@yopmail.com', ('Pswrd') : '3TL@testing'], 
+WebUI.callTestCase(findTestCase('Universal/Login/TC-3 Login with Director'), [('Email') : 'test3004@yopmail.com', ('Pswrd') : '3tl@testing'], 
     FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Universal Staging/a_Rewards'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/Universal Staging/a_Rewards'))
 
-WebUI.waitForPageLoad(2)
 
-//WebUI.scrollToPosition(999, 999, FailureHandling.STOP_ON_FAILURE)
-//WebUI.scrollToElement(findTestObject('Object Repository/rewards/Page_Universal All-Access Rewards  Get Rewa_700d57/mat-icon_close'), 0, FailureHandling.CONTINUE_ON_FAILURE)
-//WebUI.click(findTestObject('Object Repository/rewards/Page_Universal All-Access Rewards  Get Rewa_700d57/mat-icon_close'), 
-//  FailureHandling.CONTINUE_ON_FAILURE)
-//WebElement.delay(5)//headless
-WebUI.scrollToElement(findTestObject('Object Repository/Universal Staging/div_Show All'), 
-    4)
+
+WebUI.waitForPageLoad(2)
+if (WebUI.verifyElementPresent(findTestObject('Object Repository/demo/Page_Universal All-Access Rewards  Get Rewa_700d57/mat-icon_close'),
+	0)) {
+
+WebUI.click(findTestObject('Object Repository/demo/Page_Universal All-Access Rewards  Get Rewa_700d57/mat-icon_close'))
+}
+
+
+
+
+WebUI.scrollToElement(findTestObject('Object Repository/Universal Staging/div_Show All'), 4)
 
 WebUI.click(findTestObject('Object Repository/Universal Staging/div_Show All'))
 
@@ -39,14 +45,24 @@ WebUI.click(findTestObject('Object Repository/Universal Staging/span_Physical'))
 
 WebUI.scrollToPosition(9999, 9999, FailureHandling.STOP_ON_FAILURE)
 
-if (WebUI.verifyTextPresent(short_des, true, FailureHandling.CONTINUE_ON_FAILURE)) {
+if (WebUI.verifyTextPresent(short_des, true, FailureHandling.STOP_ON_FAILURE)) {
     WebUI.navigateToUrl((url + reward_cat) + behavior_id)
 
-    WebUI.delay(5)
-} else {
+    //WebUI.waitForElementPresent(findTestObject('Object Repository/Universal Staging/Physical reward image'), 0)
+    //WebUI.verifyImagePresent(findTestObject('Object Repository/Universal Staging/Reward next page image'), FailureHandling.STOP_ON_FAILURE) //WebUI.delay(5)
+    //WebUI.click(findTestObject('Object Repository/Universal Staging/Redeem Now button click'), FailureHandling.STOP_ON_FAILURE)
+
+    result = WebUI.getText(findTestObject('Object Repository/Universal Staging/Movie name display'))
+
+    System.out.println(result)
+	WebUI.click(findTestObject("Object Repository/Universal Staging/Redeem Now buttonn"), FailureHandling.STOP_ON_FAILURE)
+}
+else {
     WebUI.closeBrowser()
 }
 
-WebUI.takeScreenshot('/home/knoldus/Katalon Studio/ss.png')
+
+WebUI.takeScreenshot('/home/knoldus/Katalon Studio/Physical reward.png')
 
 WebUI.closeBrowser()
+

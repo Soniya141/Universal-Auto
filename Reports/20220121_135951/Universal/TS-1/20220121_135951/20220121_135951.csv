@@ -1,0 +1,13 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS-1,Chrome 95.0.4638.69,,,2022-01-21 13:59:53,2022-01-21 14:00:29,36.264s,PASSED
+,,,,,,,
+Test Cases/Universal/Login/TC-1 Login with Moviestar,Chrome 95.0.4638.69,,,2022-01-21 13:59:53,2022-01-21 14:00:29,35.999s,PASSED
+"openBrowser("""")",Chrome 95.0.4638.69,,,2022-01-21 13:59:53,2022-01-21 13:59:54,0.999s,PASSED
+"setViewPortSize(1920, 1080)",Chrome 95.0.4638.69,,,2022-01-21 13:59:54,2022-01-21 13:59:54,0.134s,PASSED
+"navigateToUrl(""https://universal.3tlstaging.com/home"")",Chrome 95.0.4638.69,,,2022-01-21 13:59:54,2022-01-21 14:00:18,23.270s,PASSED
+delay(5),Chrome 95.0.4638.69,,,2022-01-21 14:00:18,2022-01-21 14:00:23,5.015s,PASSED
+maximizeWindow(),Chrome 95.0.4638.69,,,2022-01-21 14:00:23,2022-01-21 14:00:23,0.122s,PASSED
+waitForPageLoad(5),Chrome 95.0.4638.69,,,2022-01-21 14:00:23,2022-01-21 14:00:23,0.081s,PASSED
+"if (verifyTextPresent(""REGISTER / LOGIN"", true, STOP_ON_FAILURE))",Chrome 95.0.4638.69,,,2022-01-21 14:00:23,2022-01-21 14:00:24,0.832s,PASSED
+delay(5),Chrome 95.0.4638.69,,,2022-01-21 14:00:24,2022-01-21 14:00:29,5.003s,PASSED
+"takeScreenshot(""/home/knoldus/Katalon Studio/Login.png"")",Chrome 95.0.4638.69,,,2022-01-21 14:00:29,2022-01-21 14:00:29,0.206s,PASSED

@@ -14,24 +14,35 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
+import com.kms.katalon.core.util.KeywordUtil
+import org.openqa.selenium.WebElement
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.testobject.TestObject as TestObject
+
+import internal.GlobalVariable
+
+import org.openqa.selenium.By
 import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Universal/Login/TC-1 Login with Moviestar'), [('Email') : 'testing12345@yopmail.com', ('Pswrd') : '3TL@testing'], 
     FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Universal Staging/a_Rewards'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.mouseOver(findTestObject('Object Repository/Universal Staging/a_Validate Purchase'))
 
 WebUI.click(findTestObject('Object Repository/Universal Staging/a_Movie Ticket'))
+WebUI.waitForElementPresent(findTestObject('Universal Staging/Verify'),
+	0)
 
-//WebUI.click(findTestObject('Object Repository/demo/Page_Universal All-Access Rewards  Get Rewa_700d57/a_Validate Purchase'))
-//WebUI.scrollToElement(findTestObject('Object Repository/demo/Page_Universal All-Access Rewards  Get Rewa_700d57/img_Regal Movie Tickets Eligible for Points_debac9', 0, FailureHandling.CONTINUE_ON_FAILURE))
-//WebUI.click(findTestObject('Object Repository/demo/Page_Universal All-Access Rewards  Get Rewa_700d57/img_Regal Movie Tickets Eligible for Points_debac9'))
 WebUI.scrollToPosition(999, 999, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(5, FailureHandling.CONTINUE_ON_FAILURE)
-
-//WebUI.verify(findTestObject('Object Repository/demo/Page_Universal All-Access Rewards  Get Rewa_700d57/img_Regal Movie Tickets Eligible for Points_debac9'), 0)
-//WebUI.takeElementScreenshot(findTestObject('Object Repository/demo/Page_Universal All-Access Rewards  Get Rewa_700d57/img_Regal Movie Tickets Eligible for Points_debac9'), '/home/knoldus/Katalon Studio/h.png', FailureHandling.STOP_ON_FAILURE)
-WebUI.takeScreenshot('/home/knoldus/Katalon Studio/hm.png')
+TestObject testObj = findTestObject('Object Repository/Universal Staging/Movie_image')
+List<WebElement> elements = WebUI.findWebElements(testObj, 10)
+	for (int i = 0;  i < elements.size(); ++i) {
+	
+		KeywordUtil.logInfo(elements.get(i).toString())
+	}
+WebUI.takeScreenshot('/home/knoldus/Katalon Studio/Movie.png')
 

@@ -22,7 +22,8 @@ WebUI.callTestCase(findTestCase('Universal/Login/TC-2 Login with Screenwriter'),
     FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/triall/Page_Universal All-Access Rewards  Get Rewa_700d57/a_Rewards'))
-
+WebUI.waitForElementPresent(findTestObject('Universal Staging/Verify'),
+	0)
 WebUI.waitForPageLoad(2)
 
 WebUI.scrollToPosition(999, 999, FailureHandling.STOP_ON_FAILURE)
@@ -30,7 +31,9 @@ WebUI.scrollToPosition(999, 999, FailureHandling.STOP_ON_FAILURE)
 if (WebUI.verifyTextPresent(short_des, true, FailureHandling.CONTINUE_ON_FAILURE)) {
     if (WebUI.verifyTextPresent(long_des, true, FailureHandling.CONTINUE_ON_FAILURE)) {
         WebUI.click(findTestObject('Object Repository/Universal-Contest entry/Reedem now button'))
-
+		result = WebUI.getText(findTestObject('Object Repository/Universal Staging/Movie name display'))
+		
+			System.out.println(result)
         WebUI.takeScreenshot()
     }
 } else {

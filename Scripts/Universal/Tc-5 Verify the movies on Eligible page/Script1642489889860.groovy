@@ -24,22 +24,7 @@ WebUI.mouseOver(findTestObject('Object Repository/eligible movie/Page_Universal 
 
 WebUI.click(findTestObject('Object Repository/eligible movie/Page_Universal All-Access Rewards  Get Rewa_700d57/a_Eligible Movies'))
 
-//WebUI.scrollToElement(findTestObject('Object Repository/eligible movie/Page_Universal All-Access Rewards  Get Rewa_700d57/mat-row_Trolls Holiday in HarmonyReceipt Up_3e0fe5'),
-//0)
-//WebUI.scrollToPosition(999, 999)
-//WebUI.verifyTextPresent('Title', true)
-//
-//WebUI.verifyTextPresent('Validation Type', true)
-//
-//WebUI.verifyTextPresent('Format', true)
-//
-//WebUI.verifyTextPresent('UPC', true)
 
-//WebUI.scrollToElement(findTestObject('Object Repository/eligible movie/Page_Universal All-Access Rewards  Get Rewa_700d57/mat-row_Trolls Holiday in HarmonyReceipt Up_3e0fe5'),
-//0)
-//WebUI.click(findTestObject('Object Repository/eligible movie/Page_Universal All-Access Rewards  Get Rewa_700d57/mat-row_Trolls Holiday in HarmonyReceipt Up_3e0fe5'))
-//WebUI.click(findTestObject('Object Repository/eligible movie/Page_Universal All-Access Rewards  Get Rewa_700d57/mat-cell_Trolls Holiday in Harmony'))
-//WebUI.click(findTestObject('Object Repository/eligible movie/Page_Universal All-Access Rewards  Get Rewa_700d57/mat-cell_Trolls Holiday in Harmony'))
 WebUI.delay(2)
 
 WebUI.scrollToPosition(999, 999, FailureHandling.CONTINUE_ON_FAILURE)
@@ -51,7 +36,9 @@ if (WebUI.verifyTextPresent(title, false, FailureHandling.CONTINUE_ON_FAILURE)) 
     WebUI.verifyTextPresent(format, true,FailureHandling.CONTINUE_ON_FAILURE)
 
     WebUI.verifyTextPresent(UPC, true,FailureHandling.CONTINUE_ON_FAILURE)
-
+	result = WebUI.getText(findTestObject('Object Repository/Universal Staging/Eligible movie name'))
+	
+		System.out.println(result)
     WebUI.takeScreenshot('/home/knoldus/Katalon Studio/sll.png')
 } else {
     WebUI.closeBrowser()

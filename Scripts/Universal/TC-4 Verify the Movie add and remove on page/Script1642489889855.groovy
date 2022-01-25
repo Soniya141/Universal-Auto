@@ -21,32 +21,23 @@ WebUI.callTestCase(findTestCase('Universal/Login/TC-2 Login with Screenwriter'),
     FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/triall/Page_Universal All-Access Rewards  Get Rewa_700d57/a_Rewards'))
-
-//WebUI.scrollToElement(findTestObject('Object Repository/triall/Page_Universal All-Access Rewards  Get Rewa_700d57/button_View More Rewards'), 
-// 10)
+WebUI.waitForElementPresent(findTestObject('Universal Staging/Verify'),
+	0)
 WebUI.scrollToPosition(99999, 99999, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(3)
 
-//boolean flag = WebUI.verifyElementPresent(findTestObject('null'), 10, FailureHandling.CONTINUE_ON_FAILURE)
-//System.out.println('test##############' + flag)
+
 WebUI.click(findTestObject('Universal-Contest entry/View More button'))
 
-//WebUI.click(findTestObject('Object Repository/triall/Page_Universal All-Access Rewards  Get Rewa_700d57/button_View More Rewards'))
-//boolean flag=WebUI.verifyElementPresent(findTestObject('null')))
+
 while (!(WebUI.verifyElementPresent(findTestObject('Universal Staging/All Rewards shown button'), 10, FailureHandling.CONTINUE_ON_FAILURE))) {
-    //WebUI.click(findTestObject('Object Repository/triall/Page_Universal All-Access Rewards  Get Rewa_700d57/button_View More Rewards'))
+    
     WebUI.scrollToPosition(99999, 99999, FailureHandling.STOP_ON_FAILURE)
 
-    // WebUI.scrollToElement(findTestObject('Object Repository/triall/Page_Universal All-Access Rewards  Get Rewa_700d57/button_View More Rewards'), 
-    //10)
+   
     WebUI.click(findTestObject('Universal-Contest entry/View More button'))
 
-    //	WebUI.click(findTestObject('Object Repository/triall/Page_Universal All-Access Rewards  Get Rewa_700d57/button_View More Rewards'))
-    // WebUI.click(findTestObject('Object Repository/triall/Page_Universal All-Access Rewards  Get Rewa_700d57/button_View More Rewards'))
-    //
-    //WebUI.scrollToPosition(99999, 99999, FailureHandling.STOP_ON_FAILURE //WebUI.click(findTestObject('Object Repository/triall/Page_Universal All-Access Rewards  Get Rewa_700d57/button_View More Rewards'))
-    // ) //WebUI.verifyElementClickable(findTestObject('Object Repository/triall/Page_Universal All-Access Rewards  Get Rewa_700d57/button_View More Rewards'))
     WebUI.delay(3)
 
     WebUI.takeScreenshot()
