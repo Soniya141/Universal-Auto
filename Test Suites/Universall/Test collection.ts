@@ -6,6 +6,7 @@
    <delayBetweenInstances>0</delayBetweenInstances>
    <executionMode>SEQUENTIAL</executionMode>
    <maxConcurrentInstances>8</maxConcurrentInstances>
+<<<<<<< HEAD
    <testSuiteRunConfigurations>
       <TestSuiteRunConfiguration>
          <configuration>
@@ -26,4 +27,7 @@
          <testSuiteEntity>Test Suites/Login-/Login</testSuiteEntity>
       </TestSuiteRunConfiguration>
    </testSuiteRunConfigurations>
+=======
+   <testSuiteRunConfigurations/>
+>>>>>>> 29198d1ebb2ccc55f651344a9117b2cca6c54c3f
 </TestSuiteCollectionEntity>
