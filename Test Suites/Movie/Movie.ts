@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Universal login</name>
+   <name>Movie</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,5 +10,5 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>cf1fa149-77fb-47a3-8527-d234fda7f0a6</testSuiteGuid>
+   <testSuiteGuid>01331af2-3499-475c-856e-c17e35f90f69</testSuiteGuid>
 </TestSuiteEntity>
