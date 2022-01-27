@@ -1,0 +1,5 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Movie,Chrome 95.0.4638.69,,,2022-01-27 18:08:08,2022-01-27 18:08:37,29.639s,FAILED
+,,,,,,,
+Test Cases/Universal/Tc-1 Verify the movies on movie ticket page,Chrome 95.0.4638.69,,,2022-01-27 18:08:31,2022-01-27 18:08:37,6.680s,FAILED
+"callTestCase(findTestCase(""Universal/Login/TC-1 Login with Moviestar""), [""Email"":""testing12345@yopmail.com"", ""Pswrd"":""3TL@testing""], STOP_ON_FAILURE)",Chrome 95.0.4638.69,,,2022-01-27 18:08:31,2022-01-27 18:08:37,6.673s,FAILED

@@ -1,0 +1,9 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Login,Chrome 95.0.4638.69,,,2022-01-27 18:07:57,2022-01-27 18:08:06,9.580s,FAILED
+,,,,,,,
+Test Cases/Universal/Login/TC-1 Login with Moviestar,Chrome 95.0.4638.69,,,2022-01-27 18:07:57,2022-01-27 18:08:06,9.410s,FAILED
+"openBrowser("""")",Chrome 95.0.4638.69,,,2022-01-27 18:07:57,2022-01-27 18:07:58,0.769s,PASSED
+"setViewPortSize(1920, 1080)",Chrome 95.0.4638.69,,,2022-01-27 18:07:58,2022-01-27 18:07:58,0.126s,PASSED
+"navigateToUrl(""https://universal.3tlstaging.com/home"")",Chrome 95.0.4638.69,,,2022-01-27 18:07:58,2022-01-27 18:08:01,3.248s,PASSED
+delay(5),Chrome 95.0.4638.69,,,2022-01-27 18:08:01,2022-01-27 18:08:06,5.013s,PASSED
+maximizeWindow(),Chrome 95.0.4638.69,,,2022-01-27 18:08:06,2022-01-27 18:08:06,0.037s,FAILED

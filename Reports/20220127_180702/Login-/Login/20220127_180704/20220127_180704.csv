@@ -1,0 +1,9 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Login,Chrome 95.0.4638.69,,,2022-01-27 18:07:11,2022-01-27 18:07:55,44.352s,FAILED
+,,,,,,,
+Test Cases/Universal/Login/TC-2 Login with Screenwriter,Chrome 95.0.4638.69,,,2022-01-27 18:07:48,2022-01-27 18:07:55,6.810s,FAILED
+"openBrowser("""")",Chrome 95.0.4638.69,,,2022-01-27 18:07:48,2022-01-27 18:07:49,0.299s,PASSED
+"setViewPortSize(1920, 1080)",Chrome 95.0.4638.69,,,2022-01-27 18:07:49,2022-01-27 18:07:49,0.119s,PASSED
+"navigateToUrl(""https://universal.3tlstaging.com/home"")",Chrome 95.0.4638.69,,,2022-01-27 18:07:49,2022-01-27 18:07:50,1.349s,PASSED
+delay(5),Chrome 95.0.4638.69,,,2022-01-27 18:07:50,2022-01-27 18:07:55,5.002s,PASSED
+maximizeWindow(),Chrome 95.0.4638.69,,,2022-01-27 18:07:55,2022-01-27 18:07:55,0.020s,FAILED

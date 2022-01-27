@@ -1,0 +1,10 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Movie,Chrome 95.0.4638.69,,,2022-01-27 18:06:15,2022-01-27 18:06:46,30.856s,PASSED
+,,,,,,,
+Test Cases/Universal/Tc-1 Verify the movies on movie ticket page,Chrome 95.0.4638.69,,,2022-01-27 18:06:16,2022-01-27 18:06:46,30.662s,PASSED
+"callTestCase(findTestCase(""Universal/Login/TC-1 Login with Moviestar""), [""Email"":""testing12345@yopmail.com"", ""Pswrd"":""3TL@testing""], STOP_ON_FAILURE)",Chrome 95.0.4638.69,,,2022-01-27 18:06:16,2022-01-27 18:06:41,24.927s,PASSED
+"mouseOver(findTestObject(""Object Repository/Universal Staging/a_Validate Purchase""))",Chrome 95.0.4638.69,,,2022-01-27 18:06:41,2022-01-27 18:06:41,0.220s,PASSED
+"click(findTestObject(""Object Repository/Universal Staging/a_Movie Ticket""))",Chrome 95.0.4638.69,,,2022-01-27 18:06:41,2022-01-27 18:06:41,0.154s,PASSED
+"scrollToPosition(999, 999, STOP_ON_FAILURE)",Chrome 95.0.4638.69,,,2022-01-27 18:06:41,2022-01-27 18:06:41,0.014s,PASSED
+"delay(5, CONTINUE_ON_FAILURE)",Chrome 95.0.4638.69,,,2022-01-27 18:06:41,2022-01-27 18:06:46,5.002s,PASSED
+"takeScreenshot(""/home/knoldus/Katalon Studio/hm.png"")",Chrome 95.0.4638.69,,,2022-01-27 18:06:46,2022-01-27 18:06:46,0.149s,PASSED
