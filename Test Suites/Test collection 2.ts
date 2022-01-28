@@ -59,7 +59,7 @@
             <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Digital Rewardss/Digital Rewards</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Contest Entryy/Contest Entry</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
          <configuration>
@@ -68,7 +68,7 @@
             <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Contest Entryy/Contest Entry</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Digital Rewardss/Digital Rewards</testSuiteEntity>
       </TestSuiteRunConfiguration>
    </testSuiteRunConfigurations>
 </TestSuiteCollectionEntity>

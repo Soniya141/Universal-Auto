@@ -11,4 +11,34 @@
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>4d4a4401-f6cb-411b-bab0-c7b4c8814f79</testSuiteGuid>
+   <testCaseLink>
+      <guid>13ecbab7-c588-4cf0-adce-7c0384b9a549</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Universal/Tc-3 Verify the Digital rewards on reward page</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>1e423ba9-302d-443c-9259-6aa6294b6951</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>ffd90a2e-038f-435b-80c2-7ec037eccad2</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>dfa5fce2-9b48-4ad0-a55f-26b34e32f661</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>3ff11dbe-7fb8-43e8-8d92-c9ec4d84bde0</variableId>
+      </variableLink>
+   </testCaseLink>
 </TestSuiteEntity>
