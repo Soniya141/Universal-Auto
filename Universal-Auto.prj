@@ -6,6 +6,7 @@
    <UUID>418d1357-6f45-4e43-9a88-2bdf0d0ff38a</UUID>
    <migratedVersion>5.9.0</migratedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
+   <projectFileLocation>/home/knoldus/git/Universal-Auto/Universal-Auto.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>

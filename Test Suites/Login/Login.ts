@@ -12,7 +12,7 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>c9becd62-070b-437f-a192-9dde2cdef181</testSuiteGuid>
    <testCaseLink>
-      <guid>b93d1aaf-3e3c-41a2-85c6-fd58f35c95ac</guid>
+      <guid>80635697-5b10-4820-87db-3a325092e710</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Universal/Login/TC-1 Login with Moviestar</testCaseId>
@@ -27,6 +27,60 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>7b8c01bd-d1ed-460a-9c28-857ab1a504d7</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e8aa0e1d-64ab-4871-8029-d6b90630ba52</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Universal/Login/TC-3 Login with Director</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>95fb0e14-5fef-4fda-bedb-a1303e9990d8</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>84e6614f-5623-4567-87f3-08512a37a8b0</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a0f4ffc9-e383-4c3c-8cdd-ce04928e0d2e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Universal/Login/TC-2 Login with Screenwriter</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>a1b99cef-9aa6-4138-a15f-091595ef2cf1</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>0acab48c-8340-4dd2-864e-d2f33981b4ec</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2040a696-202a-4271-aa1f-6596f4f194fb</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Universal/Login/TC-4 Login with Extra</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>67b33b4f-2999-4ffd-8a70-765b60f1ca9c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>a8f43b2d-1f27-484a-a740-5e374e46ce70</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

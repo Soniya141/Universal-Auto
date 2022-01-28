@@ -1056,7 +1056,7 @@ Session ID: 9c27bf22f743fee1d7c5dc0942fddab2</property>
   <property name="startLine">23</property>
   <property name="stepIndex">3</property>
 </record>
-</log><record>
+<record>
   <date>2022-01-27T18:08:39</date>
   <millis>1643287119549</millis>
   <sequence>78</sequence>
