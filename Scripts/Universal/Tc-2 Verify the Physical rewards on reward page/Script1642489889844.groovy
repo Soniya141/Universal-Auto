@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Universal/Login/TC-2 Login with Screenwriter'), [('Email') : 'ankit248@yopmail.com', ('Pswrd') : '3TL@testing'], 
+WebUI.callTestCase(findTestCase('Universal/Login/TC-3 Login with Director'), [('Email') : 'test3004@yopmail.com', ('Pswrd') : '3TL@testing'], 
     FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/Universal Staging/a_Rewards'))
@@ -29,8 +29,7 @@ WebUI.waitForPageLoad(2)
 //WebUI.click(findTestObject('Object Repository/rewards/Page_Universal All-Access Rewards  Get Rewa_700d57/mat-icon_close'), 
 //  FailureHandling.CONTINUE_ON_FAILURE)
 //WebElement.delay(5)//headless
-WebUI.scrollToElement(findTestObject('Object Repository/Universal Staging/div_Show All'), 
-    4)
+WebUI.scrollToElement(findTestObject('Object Repository/Universal Staging/div_Show All'), 4)
 
 WebUI.click(findTestObject('Object Repository/Universal Staging/div_Show All'))
 
@@ -43,6 +42,10 @@ if (WebUI.verifyTextPresent(short_des, true, FailureHandling.CONTINUE_ON_FAILURE
     WebUI.navigateToUrl((url + reward_cat) + behavior_id)
 
     WebUI.delay(5)
+
+    movie_name = WebUI.verifyTextPresent(findTestOnject('Object Repository/Universal Staging/Get movie name'), true, FailureHandling.CONTINUE_ON_FAILURE)
+
+    System.out.println(movie_name)
 } else {
     WebUI.closeBrowser()
 }
@@ -50,3 +53,4 @@ if (WebUI.verifyTextPresent(short_des, true, FailureHandling.CONTINUE_ON_FAILURE
 WebUI.takeScreenshot('/home/knoldus/Katalon Studio/ss.png')
 
 WebUI.closeBrowser()
+

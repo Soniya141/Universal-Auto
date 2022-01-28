@@ -32,7 +32,11 @@ if (WebUI.verifyTextPresent('REGISTER / LOGIN', true, FailureHandling.STOP_ON_FA
 			Pswrd)
 
 		WebUI.click(findTestObject('Universal Staging/button_Login'))
+		WebUI.delay(2)
 		
+		
+		result = WebUI.getText(findTestObject('Object Repository/Universal Staging/Tier Name'))
+			System.out.println(result)
 }else {
 	WebUI.closeBrowser()
 

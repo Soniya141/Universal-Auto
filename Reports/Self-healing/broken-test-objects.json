@@ -1,3 +1,14 @@
 {
-  "brokenTestObjects" : [ ]
+  "brokenTestObjects": [
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/Universal Staging/div_Show All",
+      "brokenLocator": "//mat-select[@id\u003d\u0027mat-select-2\u0027]/div/div",
+      "brokenLocatorMethod": "XPATH",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027next\u0027])[1]/following::div[15]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/Self-healing/Object Repository/Universal Staging/div_Show All_neighbor.png"
+    }
+  ]
 }
