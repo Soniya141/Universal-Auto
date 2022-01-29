@@ -16,6 +16,12 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Universal/TC-4 Verify the Movie add and remove on page</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>f9357481-f31c-464a-ab7b-74c31a00b439</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>5be88648-15ef-43fc-a3b4-8f0f73fc2881</guid>

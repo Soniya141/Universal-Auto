@@ -48,16 +48,16 @@ if (WebUI.verifyTextPresent(Title, true, FailureHandling.CONTINUE_ON_FAILURE)) {
 		WebUI.click(findTestObject('Object Repository/Universal Staging/Redeem Now button'))
 		if (WebUI.verifyTextPresent(popup_message, false, FailureHandling.STOP_ON_FAILURE)) {
 			System.out.println("Already reedemed")
+			WebUI.takeFullPageScreenshot()
+			WebUI.closeBrowser()
 		}
 		else {
 			System.out.println("Successfully reedemed")
+			WebUI.closeBrowser()
 		}
-        WebUI.takeScreenshot('/home/knoldus/Katalon Studio/sbs.png')
+       
 		
     }
-} else {
-    WebUI.closeBrowser()
-	System.out.println("Your testcase has been failed")
 }
 
 WebUI.closeBrowser()

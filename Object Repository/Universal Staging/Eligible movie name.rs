@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Movies images</name>
+   <name>Eligible movie name</name>
    <tag></tag>
-   <elementGuidId>c2d3da11-31c7-4184-8459-5d44ceace34d</elementGuidId>
+   <elementGuidId>e8c978f8-94ac-402c-8cd4-808577509c76</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class=&quot;col-6 col-sm-2 ng-star-inserted&quot;]/div/a/img</value>
+         <value>//mat-table[@class=&quot;mat-table&quot;]/mat-row</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

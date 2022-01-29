@@ -39,13 +39,19 @@ WebUI.click(findTestObject('Object Repository/Universal Staging/a_Movie Ticket')
 //WebUI.click(findTestObject('Object Repository/demo/Page_Universal All-Access Rewards  Get Rewa_700d57/img_Regal Movie Tickets Eligible for Points_debac9'))
 WebUI.scrollToPosition(999, 999, FailureHandling.STOP_ON_FAILURE)
 
+
 WebUI.delay(5)
-element=WebUI.verifyElementPresent(findTestObject('Object Repository/Universal Staging/Movies images'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+//ist listofelements = WebUI.findWebElements(findTestObject('Object Repository/Universal Staging/Movies images'))
+//for(int i=0;i<listofelements.size();i++)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Universal Staging/Movies images'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+
 //boolean flag= WebUI.verifyElementPresent(findTestObject('',20,FailureHandling.CONTINUE_ON_FAILURE))
-	for(int i=0; i<=element;i++)
+	
+	result=WebUI.getText(findTestObject('Object Repository/Universal Staging/Movies images'))
+	for(int i=0; i<=result;i++)
+		
 	{
-	result=WebUI.getText(findTestObject('Object Repository/Universal Staging/Movies images', i))
-	System.out.println(element)
+	System.out.println(i)
 	}
 
 //WebUI.verify(findTestObject('Object Repository/demo/Page_Universal All-Access Rewards  Get Rewa_700d57/img_Regal Movie Tickets Eligible for Points_debac9'), 0)

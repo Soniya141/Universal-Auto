@@ -45,9 +45,11 @@ if (WebUI.verifyTextPresent('REGISTER / LOGIN', true, FailureHandling.STOP_ON_FA
 		
 		result = WebUI.getText(findTestObject('Object Repository/Universal Staging/Tier Name'))
 			System.out.println("Welcome" +result)
+			WebUI.takeFullPageScreenshot()
+			WebUI.closeBrowser()
 }else {
 	WebUI.closeBrowser()
 
 }
-WebUI.delay(5)
-WebUI.takeScreenshot("/home/knoldus/Katalon Studio/Login.png")
+
+

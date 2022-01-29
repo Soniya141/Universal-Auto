@@ -24,31 +24,27 @@ WebUI.mouseOver(findTestObject('Object Repository/eligible movie/Page_Universal 
 
 WebUI.click(findTestObject('Object Repository/eligible movie/Page_Universal All-Access Rewards  Get Rewa_700d57/a_Eligible Movies'))
 
-//WebUI.scrollToElement(findTestObject('Object Repository/eligible movie/Page_Universal All-Access Rewards  Get Rewa_700d57/mat-row_Trolls Holiday in HarmonyReceipt Up_3e0fe5'),
-//0)
-//WebUI.verifyTextPresent('Title', true)
-//
-//WebUI.verifyTextPresent('Validation Type', true)
-//
-//WebUI.verifyTextPresent('Format', true)
-//
-//WebUI.verifyTextPresent('UPC', true)
+
+rrf
 
 
 WebUI.delay(2)
 
-WebUI.scrollToPosition(99, 99, FailureHandling.CONTINUE_ON_FAILURE)
-Movie_name = WebUI.verifyTextPresent(title, true)
+WebUI.scrollToPosition(999, 999, FailureHandling.CONTINUE_ON_FAILURE)
+
 if (WebUI.verifyTextPresent(title, true)) {
    Movie_validation = WebUI.verifyTextPresent(Validation_type, true)
-WebUI.getText(Movie_name, FailureHandling.STOP_ON_FAILURE)
+
     Movie_format=WebUI.verifyTextPresent(format, true)
 
    Movie_UPC= WebUI.verifyTextPresent(UPC, true)
-	System.out.println("Eligible movie name " +Movie_name, + Movie_validation, +Movie_format, +Movie_UPC)
+   Movie_name = WebUI.getText(findTestObject('Object Repository/Universal Staging/Eligible movie name'))
+	System.out.println("Eligible movie name " +Movie_name)
 
-    WebUI.takeScreenshot('/home/knoldus/Katalon Studio/ssss.png')
+   WebUI.takeFullPageScreenshot()
+			WebUI.closeBrowser()
 } else {
+	System.out.println("Unable to find the eligible movie name")
     WebUI.closeBrowser()
 	
 }

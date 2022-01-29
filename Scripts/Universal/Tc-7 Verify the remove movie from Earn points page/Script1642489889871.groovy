@@ -34,6 +34,8 @@ while (!(WebUI.verifyElementPresent(findTestObject('Object Repository/Universal 
 
     if (WebUI.verifyTextPresent(short_des1, true, FailureHandling.CONTINUE_ON_FAILURE)) {
         System.out.println('Text found')
+		WebUI.takeFullPageScreenshot()
+		WebUI.closeBrowser()
 
         WebUI.closeBrowser()
     } else {
