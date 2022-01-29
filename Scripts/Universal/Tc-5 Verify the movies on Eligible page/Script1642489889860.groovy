@@ -45,7 +45,7 @@ WebUI.getText(Movie_name, FailureHandling.STOP_ON_FAILURE)
     Movie_format=WebUI.verifyTextPresent(format, true)
 
    Movie_UPC= WebUI.verifyTextPresent(UPC, true)
-	System.out.println("Eligible movie name ", +Movie_name, + Movie_validation, +Movie_format, +Movie_UPC)
+	System.out.println("Eligible movie name " +Movie_name, + Movie_validation, +Movie_format, +Movie_UPC)
 
     WebUI.takeScreenshot('/home/knoldus/Katalon Studio/ssss.png')
 } else {
