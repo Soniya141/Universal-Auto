@@ -6,7 +6,7 @@
    <comment></comment>
    <testCaseGuid>0c0bf5ef-e729-45b2-88d8-ac26ac743f36</testCaseGuid>
    <variable>
-      <defaultValue>'Meet Joe Black'</defaultValue>
+      <defaultValue>'Kicking and Screaming'</defaultValue>
       <description></description>
       <id>1e423ba9-302d-443c-9259-6aa6294b6951</id>
       <masked>false</masked>
@@ -20,7 +20,7 @@
       <name>Short_des</name>
    </variable>
    <variable>
-      <defaultValue>'8be1c7b396cf9d694babd31c3202f0bc-26b70a05f4ce81e9e65fb40fd4844d6f'</defaultValue>
+      <defaultValue>'8be1c7b396cf9d694babd31c3202f0bc-9ef6e6b92d1f5ca1fd4e6cac7d048def'</defaultValue>
       <description></description>
       <id>dfa5fce2-9b48-4ad0-a55f-26b34e32f661</id>
       <masked>false</masked>
@@ -32,5 +32,12 @@
       <id>3ff11dbe-7fb8-43e8-8d92-c9ec4d84bde0</id>
       <masked>false</masked>
       <name>long_description</name>
+   </variable>
+   <variable>
+      <defaultValue>'Sorry! You’ve already redeemed this reward.'</defaultValue>
+      <description></description>
+      <id>5ab1f738-82fb-4300-873a-f7f040cb6410</id>
+      <masked>false</masked>
+      <name>popup_message</name>
    </variable>
 </TestCaseEntity>

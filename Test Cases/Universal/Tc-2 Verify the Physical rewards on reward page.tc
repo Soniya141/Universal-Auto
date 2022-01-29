@@ -33,4 +33,11 @@
       <masked>false</masked>
       <name>behavior_id</name>
    </variable>
+   <variable>
+      <defaultValue>'Sorry! You’ve already redeemed this reward.'</defaultValue>
+      <description></description>
+      <id>8da617de-0cfb-48cc-956c-39e0f5504549</id>
+      <masked>false</masked>
+      <name>popup_message</name>
+   </variable>
 </TestCaseEntity>

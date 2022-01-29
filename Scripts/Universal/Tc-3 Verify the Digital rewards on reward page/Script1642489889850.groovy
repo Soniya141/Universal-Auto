@@ -31,7 +31,7 @@ WebUI.click(findTestObject('Object Repository/Reward page/Page_Universal All-Acc
 
 WebUI.click(findTestObject('Object Repository/Reward page/Page_Universal All-Access Rewards  Get Rewa_700d57/span_Digital'))
 
-//WebUI.scrollToPosition(999, 999, FailureHandling.STOP_ON_FAILURE)
+WebUI.scrollToPosition(999, 999, FailureHandling.STOP_ON_FAILURE)
 WebUI.click(findTestObject('Object Repository/Reward page/Page_Universal All-Access Rewards  Get Rewa_700d57/div_1K PointsBeethovens Big BreakDigital Mo_cf5511'))
 
 WebUI.takeScreenshot()
@@ -40,14 +40,24 @@ WebUI.delay(3)
 
 if (WebUI.verifyTextPresent(Title, true, FailureHandling.CONTINUE_ON_FAILURE)) {
     if (WebUI.verifyTextPresent(Short_des, true, FailureHandling.CONTINUE_ON_FAILURE)) {
-        //WebUI.click(findTestObject('Object Repository/Reward/Reedem now button'))
+        
         WebUI.navigateToUrl('https://universal.3tlstaging.com/reward-preview/' + behavior_id)
-
-        // lick('Object Repository/Reward/Reedem Reward', FailureHandling.STOP_ON_FAILURE)
+		result = WebUI.getText(findTestObject('Object Repository/Universal Staging/Get movie name'))
+		System.out.println("Movie Name is"  +result)
+		WebUI.scrollToPosition(999, 999, FailureHandling.STOP_ON_FAILURE)
+		WebUI.click(findTestObject('Object Repository/Universal Staging/Redeem Now button'))
+		if (WebUI.verifyTextPresent(popup_message, false, FailureHandling.STOP_ON_FAILURE)) {
+			System.out.println("Already reedemed")
+		}
+		else {
+			System.out.println("Successfully reedemed")
+		}
         WebUI.takeScreenshot('/home/knoldus/Katalon Studio/sbs.png')
+		
     }
 } else {
     WebUI.closeBrowser()
+	System.out.println("Your testcase has been failed")
 }
 
 WebUI.closeBrowser()

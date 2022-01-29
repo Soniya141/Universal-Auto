@@ -26,4 +26,11 @@
       <masked>false</masked>
       <name>long_des</name>
    </variable>
+   <variable>
+      <defaultValue>'Sorry! You’ve already redeemed this reward.'</defaultValue>
+      <description></description>
+      <id>a9883899-f3d2-4494-a24a-979c6c8d82a4</id>
+      <masked>false</masked>
+      <name>popup_message</name>
+   </variable>
 </TestCaseEntity>

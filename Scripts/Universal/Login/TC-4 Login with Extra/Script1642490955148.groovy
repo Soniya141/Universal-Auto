@@ -20,7 +20,7 @@ import org.openqa.selenium.Keys as Keys
 WebUI.openBrowser('')
 
 WebUI.setViewPortSize(1920, 1080)
-WebUI.navigateToUrl('https://universal.3tlstaging.com/home')
+WebUI.navigateToUrl(GlobalVariable.url)
 WebUI.delay(5)
 WebUI.maximizeWindow()
 if (WebUI.verifyTextPresent('REGISTER / LOGIN', true, FailureHandling.STOP_ON_FAILURE)){

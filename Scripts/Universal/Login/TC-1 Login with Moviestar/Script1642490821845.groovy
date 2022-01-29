@@ -16,10 +16,18 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.chrome.ChromeOptions;
 WebUI.openBrowser('')
 
 WebUI.setViewPortSize(1920, 1080)
-WebUI.navigateToUrl('https://universal.3tlstaging.com/home')
+ChromeOptions options =new ChromeOptions()
+
+options.addArguments("start_maximized")
+options.addArguments("disable-infobars")
+options.addArguments("disable-extensions")
+options.addArguments("--headless")
+options.addArguments("--window-size=1920,1080")
+WebUI.navigateToUrl(GlobalVariable.url)
 WebUI.delay(5)
 WebUI.maximizeWindow()
 if (WebUI.verifyTextPresent('REGISTER / LOGIN', true, FailureHandling.STOP_ON_FAILURE)){
@@ -36,7 +44,7 @@ if (WebUI.verifyTextPresent('REGISTER / LOGIN', true, FailureHandling.STOP_ON_FA
 		
 		
 		result = WebUI.getText(findTestObject('Object Repository/Universal Staging/Tier Name'))
-			System.out.println(result)
+			System.out.println("Welcome" +result)
 }else {
 	WebUI.closeBrowser()
 

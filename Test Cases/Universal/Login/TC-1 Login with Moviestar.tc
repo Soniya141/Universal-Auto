@@ -19,4 +19,11 @@
       <masked>false</masked>
       <name>Pswrd</name>
    </variable>
+   <variable>
+      <defaultValue>'https://universal.3tlstaging.com/home'</defaultValue>
+      <description></description>
+      <id>15343862-bc42-4164-b3fa-d3482469903e</id>
+      <masked>false</masked>
+      <name>url</name>
+   </variable>
 </TestCaseEntity>

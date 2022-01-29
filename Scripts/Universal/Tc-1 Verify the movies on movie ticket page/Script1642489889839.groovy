@@ -16,7 +16,17 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+System.setProperty("webdriver.chrome.driver", "/home/knoldus/Desktop/chromedriver_linux64/chromedriver");
+ChromeOptions options =new ChromeOptions()
 
+options.addArguments("start_maximized")
+options.addArguments("disable-infobars")
+options.addArguments("disable-extensions")
+options.addArguments("--headless")
+options.addArguments("--window-size=1920,1080")
+//options.addArguments("--window-size=1920,1080","--disable-gpu", "--disable-extensions", "--no-sandbox", "-incognito")
 WebUI.callTestCase(findTestCase('Universal/Login/TC-1 Login with Moviestar'), [('Email') : 'testing12345@yopmail.com', ('Pswrd') : '3TL@testing'], 
     FailureHandling.STOP_ON_FAILURE)
 

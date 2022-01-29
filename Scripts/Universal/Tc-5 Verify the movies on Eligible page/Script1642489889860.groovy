@@ -26,32 +26,30 @@ WebUI.click(findTestObject('Object Repository/eligible movie/Page_Universal All-
 
 //WebUI.scrollToElement(findTestObject('Object Repository/eligible movie/Page_Universal All-Access Rewards  Get Rewa_700d57/mat-row_Trolls Holiday in HarmonyReceipt Up_3e0fe5'),
 //0)
-WebUI.verifyTextPresent('Title', true)
+//WebUI.verifyTextPresent('Title', true)
+//
+//WebUI.verifyTextPresent('Validation Type', true)
+//
+//WebUI.verifyTextPresent('Format', true)
+//
+//WebUI.verifyTextPresent('UPC', true)
 
-WebUI.verifyTextPresent('Validation Type', true)
 
-WebUI.verifyTextPresent('Format', true)
-
-WebUI.verifyTextPresent('UPC', true)
-
-//WebUI.scrollToElement(findTestObject('Object Repository/eligible movie/Page_Universal All-Access Rewards  Get Rewa_700d57/mat-row_Trolls Holiday in HarmonyReceipt Up_3e0fe5'),
-//0)
-//WebUI.click(findTestObject('Object Repository/eligible movie/Page_Universal All-Access Rewards  Get Rewa_700d57/mat-row_Trolls Holiday in HarmonyReceipt Up_3e0fe5'))
-//WebUI.click(findTestObject('Object Repository/eligible movie/Page_Universal All-Access Rewards  Get Rewa_700d57/mat-cell_Trolls Holiday in Harmony'))
-//WebUI.click(findTestObject('Object Repository/eligible movie/Page_Universal All-Access Rewards  Get Rewa_700d57/mat-cell_Trolls Holiday in Harmony'))
 WebUI.delay(2)
 
 WebUI.scrollToPosition(99, 99, FailureHandling.CONTINUE_ON_FAILURE)
-
+Movie_name = WebUI.verifyTextPresent(title, true)
 if (WebUI.verifyTextPresent(title, true)) {
-    WebUI.verifyTextPresent(Validation_type, true)
+   Movie_validation = WebUI.verifyTextPresent(Validation_type, true)
+WebUI.getText(Movie_name, FailureHandling.STOP_ON_FAILURE)
+    Movie_format=WebUI.verifyTextPresent(format, true)
 
-    WebUI.verifyTextPresent(format, true)
-
-    WebUI.verifyTextPresent(UPC, true)
+   Movie_UPC= WebUI.verifyTextPresent(UPC, true)
+	System.out.println("Eligible movie name ", +Movie_name, + Movie_validation, +Movie_format, +Movie_UPC)
 
     WebUI.takeScreenshot('/home/knoldus/Katalon Studio/ssss.png')
 } else {
     WebUI.closeBrowser()
+	
 }
 WebUI.closeBrowser()

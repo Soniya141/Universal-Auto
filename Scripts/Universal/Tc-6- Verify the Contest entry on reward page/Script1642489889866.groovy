@@ -30,10 +30,20 @@ WebUI.scrollToPosition(999, 999, FailureHandling.STOP_ON_FAILURE)
 if (WebUI.verifyTextPresent(short_des, true, FailureHandling.CONTINUE_ON_FAILURE)) {
     if (WebUI.verifyTextPresent(long_des, true, FailureHandling.CONTINUE_ON_FAILURE)) {
         WebUI.click(findTestObject('Object Repository/Universal-Contest entry/Reedem now button'))
-
+		result = WebUI.getText(findTestObject('Object Repository/Universal Staging/Get movie name'))
+		System.out.println(result)
+		WebUI.scrollToPosition(999, 999, FailureHandling.STOP_ON_FAILURE)
+		WebUI.click(findTestObject('Object Repository/Universal Staging/Redeem Now button'))
+		if (WebUI.verifyTextPresent(popup_message, false, FailureHandling.STOP_ON_FAILURE)) {
+			System.out.println("Already reedemed")
+		}
+		else {
+			System.out.println("Successfully reedemed")
+		}
         WebUI.takeScreenshot()
     }
 } else {
     WebUI.closeBrowser()
+	System.out.println("Your testcase has been failed")
 }
 

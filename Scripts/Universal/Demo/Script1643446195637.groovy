@@ -17,32 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
-
-WebUI.setViewPortSize(1920, 1080)
-WebUI.navigateToUrl(GlobalVariable.url)
-WebUI.delay(5)
-WebUI.maximizeWindow()
-if (WebUI.verifyTextPresent('REGISTER / LOGIN', true, FailureHandling.STOP_ON_FAILURE)){
-		WebUI.click(findTestObject('Universal Staging/a_Register  Login'))
-
-		WebUI.setText(findTestObject('Universal Staging/input_USERNAME OR EMAIL_mat-input-0'),
-			Email)
-
-		WebUI.setText(findTestObject('Universal Staging/input_PASSWORD_mat-input-1'),
-			Pswrd)
-
-		WebUI.click(findTestObject('Universal Staging/button_Login'))
-		WebUI.delay(2)
-		
-		
-		result = WebUI.getText(findTestObject('Object Repository/Universal Staging/Tier Name'))
-			System.out.println(result)
-}else {
-	WebUI.closeBrowser()
-
-}
-WebUI.delay(5)
-WebUI.takeScreenshot("/home/knoldus/Katalon Studio/Login.png")
-
+WebUI.callTestCase(findTestCase('Universal/Login/TC-3 Login with Director'), [('Email') : 'test3004@yopmail.com', ('Pswrd') : '3tl@testing'], 
+    FailureHandling.STOP_ON_FAILURE)
 

@@ -41,5 +41,5 @@ while (!(WebUI.verifyElementPresent(findTestObject('Object Repository/Universal 
     }
 }
 
-WebUI.takeFullPageScreenshotAsCheckpoint('full_view_no_elements', ignoredElements)
+
 

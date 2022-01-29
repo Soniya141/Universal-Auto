@@ -17,40 +17,48 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Universal/Login/TC-3 Login with Director'), [('Email') : 'test3004@yopmail.com', ('Pswrd') : '3TL@testing'], 
+WebUI.callTestCase(findTestCase('Universal/Login/TC-1 Login with Moviestar'), [('Email') : 'testing12345@yopmail.com', ('Pswrd') : '3TL@testing'], 
     FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/Universal Staging/a_Rewards'))
 
+
 WebUI.waitForPageLoad(2)
 
-//WebUI.scrollToPosition(999, 999, FailureHandling.STOP_ON_FAILURE)
-//WebUI.scrollToElement(findTestObject('Object Repository/rewards/Page_Universal All-Access Rewards  Get Rewa_700d57/mat-icon_close'), 0, FailureHandling.CONTINUE_ON_FAILURE)
-//WebUI.click(findTestObject('Object Repository/rewards/Page_Universal All-Access Rewards  Get Rewa_700d57/mat-icon_close'), 
-//  FailureHandling.CONTINUE_ON_FAILURE)
+
 //WebElement.delay(5)//headless
 WebUI.scrollToElement(findTestObject('Object Repository/Universal Staging/div_Show All'), 4)
 
 WebUI.click(findTestObject('Object Repository/Universal Staging/div_Show All'))
 
-//WebUI.delay(2)
+WebUI.delay(2)
+
 WebUI.click(findTestObject('Object Repository/Universal Staging/span_Physical'))
 
-WebUI.scrollToPosition(9999, 9999, FailureHandling.STOP_ON_FAILURE)
+WebUI.scrollToPosition(99999, 99999, FailureHandling.STOP_ON_FAILURE)
 
 if (WebUI.verifyTextPresent(short_des, true, FailureHandling.CONTINUE_ON_FAILURE)) {
     WebUI.navigateToUrl((url + reward_cat) + behavior_id)
 
     WebUI.delay(5)
-
-    movie_name = WebUI.verifyTextPresent(findTestOnject('Object Repository/Universal Staging/Get movie name'), true, FailureHandling.CONTINUE_ON_FAILURE)
-
-    System.out.println(movie_name)
+	
+	
+	result = WebUI.getText(findTestObject('Object Repository/Universal Staging/Get movie name'))
+		System.out.println(result)
+		WebUI.scrollToPosition(999, 999, FailureHandling.STOP_ON_FAILURE)
+		WebUI.click(findTestObject('Object Repository/Universal Staging/Redeem Now button'))
+		if (WebUI.verifyTextPresent(popup_message, false, FailureHandling.STOP_ON_FAILURE)) {
+			System.out.println("Already reedemed")
+		}
+		else {
+			System.out.println("Successfully reedemed")
+		}
 } else {
     WebUI.closeBrowser()
+	System.out.println("Your testcase has been failed")
 }
 
-WebUI.takeScreenshot('/home/knoldus/Katalon Studio/ss.png')
+
 
 WebUI.closeBrowser()
 
