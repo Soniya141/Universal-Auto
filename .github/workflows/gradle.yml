@@ -30,11 +30,8 @@ jobs:
         java-version: '8'
         distribution: 'temurin'
     - name: Checkout
-    - uses: actions/checkout@v2
-    - uses: nanasess/setup-chromedriver@v1
-      with:
-          # Optional: do not specify to match Chrome's version
-          chromedriver-version: '97.0.4692.99'
+      uses: actions/checkout@v2
+  
     
     - name: Katalon Studio Github Action
       uses: katalon-studio/katalon-studio-github-action@v2
