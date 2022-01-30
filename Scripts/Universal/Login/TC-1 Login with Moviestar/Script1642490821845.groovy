@@ -20,13 +20,14 @@ import org.openqa.selenium.chrome.ChromeOptions;
 WebUI.openBrowser('')
 
 WebUI.setViewPortSize(1920, 1080)
-ChromeOptions options =new ChromeOptions()
-
-options.addArguments("start_maximized")
-options.addArguments("disable-infobars")
-options.addArguments("disable-extensions")
-options.addArguments("--headless")
-options.addArguments("--window-size=1920,1080")
+//System.setProperty("webdriver.chrome.driver", "/home/knoldus/Downloads/chromedriver_linux64/chromedriver");
+//ChromeOptions options =new ChromeOptions()
+//
+//options.addArguments("start_maximized")
+//options.addArguments("disable-infobars")
+//options.addArguments("disable-extensions")
+//options.addArguments("--headless")
+//options.addArguments("--window-size=1920,1080")
 WebUI.navigateToUrl(GlobalVariable.url)
 WebUI.delay(5)
 WebUI.maximizeWindow()
@@ -45,8 +46,8 @@ if (WebUI.verifyTextPresent('REGISTER / LOGIN', true, FailureHandling.STOP_ON_FA
 		
 		result = WebUI.getText(findTestObject('Object Repository/Universal Staging/Tier Name'))
 			System.out.println("Welcome" +result)
-			WebUI.takeFullPageScreenshot()
-			WebUI.closeBrowser()
+			WebUI.takeScreenshot()
+			
 }else {
 	WebUI.closeBrowser()
 

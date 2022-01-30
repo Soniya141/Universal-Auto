@@ -52,7 +52,7 @@ if (WebUI.verifyTextPresent(short_des, true, FailureHandling.CONTINUE_ON_FAILURE
 		}
 		else {
 			System.out.println("Successfully reedemed")
-			WebUI.takeFullPageScreenshot()
+			WebUI.takeScreenshot()
 			WebUI.closeBrowser()
 		}
 } else {

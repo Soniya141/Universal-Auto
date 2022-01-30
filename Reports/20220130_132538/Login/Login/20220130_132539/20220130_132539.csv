@@ -1,0 +1,17 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Login,Chrome 97.0.4692.99,,,2022-01-30 13:25:55,2022-01-30 13:26:28,32.535s,PASSED
+,,,,,,,
+Test Cases/Universal/Login/TC-1 Login with Moviestar,Chrome 97.0.4692.99,,,2022-01-30 13:25:56,2022-01-30 13:26:28,32.121s,PASSED
+"openBrowser("""")",Chrome 97.0.4692.99,,,2022-01-30 13:25:56,2022-01-30 13:25:57,1.462s,PASSED
+"setViewPortSize(1920, 1080)",Chrome 97.0.4692.99,,,2022-01-30 13:25:57,2022-01-30 13:25:58,0.151s,PASSED
+"System.setProperty(""webdriver.chrome.driver"", ""/home/knoldus/Downloads/chromedriver_linux64/chromedriver"")",Chrome 97.0.4692.99,,,2022-01-30 13:25:58,2022-01-30 13:25:58,0.002s,PASSED
+options = new org.openqa.selenium.chrome.ChromeOptions(),Chrome 97.0.4692.99,,,2022-01-30 13:25:58,2022-01-30 13:25:58,0.010s,PASSED
+"options.addArguments(""start_maximized"")",Chrome 97.0.4692.99,,,2022-01-30 13:25:58,2022-01-30 13:25:58,0.002s,PASSED
+"options.addArguments(""disable-infobars"")",Chrome 97.0.4692.99,,,2022-01-30 13:25:58,2022-01-30 13:25:58,0.001s,PASSED
+"options.addArguments(""disable-extensions"")",Chrome 97.0.4692.99,,,2022-01-30 13:25:58,2022-01-30 13:25:58,0.001s,PASSED
+"options.addArguments(""--headless"")",Chrome 97.0.4692.99,,,2022-01-30 13:25:58,2022-01-30 13:25:58,0.001s,PASSED
+"options.addArguments(""--window-size=1920,1080"")",Chrome 97.0.4692.99,,,2022-01-30 13:25:58,2022-01-30 13:25:58,0.001s,PASSED
+navigateToUrl(url),Chrome 97.0.4692.99,,,2022-01-30 13:25:58,2022-01-30 13:26:14,16.447s,PASSED
+delay(5),Chrome 97.0.4692.99,,,2022-01-30 13:26:14,2022-01-30 13:26:19,5.035s,PASSED
+maximizeWindow(),Chrome 97.0.4692.99,,,2022-01-30 13:26:19,2022-01-30 13:26:19,0.136s,PASSED
+"if (verifyTextPresent(""REGISTER / LOGIN"", true, STOP_ON_FAILURE))",Chrome 97.0.4692.99,,,2022-01-30 13:26:19,2022-01-30 13:26:28,8.525s,PASSED

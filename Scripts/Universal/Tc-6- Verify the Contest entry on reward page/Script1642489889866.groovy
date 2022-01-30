@@ -36,7 +36,7 @@ if (WebUI.verifyTextPresent(short_des, true, FailureHandling.CONTINUE_ON_FAILURE
 		WebUI.click(findTestObject('Object Repository/Universal Staging/Redeem Now button'))
 		if (WebUI.verifyTextPresent(popup_message, false, FailureHandling.STOP_ON_FAILURE)) {
 			System.out.println("Already reedemed")
-			WebUI.takeFullPageScreenshot()
+			WebUI.takeScreenshot()
 			WebUI.closeBrowser()
 		}
 		

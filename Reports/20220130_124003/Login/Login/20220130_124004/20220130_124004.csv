@@ -1,0 +1,5 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Login,,,,2022-01-30 12:40:19,2022-01-30 12:40:21,1.521s,FAILED
+,,,,,,,
+Test Cases/Universal/Login/TC-1 Login with Moviestar,,,,2022-01-30 12:40:19,2022-01-30 12:40:21,1.254s,FAILED
+"openBrowser("""")",,,,2022-01-30 12:40:20,2022-01-30 12:40:21,0.946s,FAILED

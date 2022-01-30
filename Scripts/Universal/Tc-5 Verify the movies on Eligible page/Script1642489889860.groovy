@@ -41,7 +41,7 @@ if (WebUI.verifyTextPresent(title, true)) {
    Movie_name = WebUI.getText(findTestObject('Object Repository/Universal Staging/Eligible movie name'))
 	System.out.println("Eligible movie name " +Movie_name)
 
-   WebUI.takeFullPageScreenshot()
+	WebUI.takeScreenshot()
 			WebUI.closeBrowser()
 } else {
 	System.out.println("Unable to find the eligible movie name")

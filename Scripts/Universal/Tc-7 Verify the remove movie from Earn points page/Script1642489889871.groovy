@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Universal/Login/TC-3 Login with Director'), [('Email') : 'test3004@yopmail.com', ('Pswrd') : '3TL@testing'], 
+WebUI.callTestCase(findTestCase('Universal/Login/TC-3 Login with Director'), [('Email') : 'test3004@yopmail.com', ('Pswrd') : '3tl@testing'], 
     FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(3)
@@ -34,14 +34,14 @@ while (!(WebUI.verifyElementPresent(findTestObject('Object Repository/Universal 
 
     if (WebUI.verifyTextPresent(short_des1, true, FailureHandling.CONTINUE_ON_FAILURE)) {
         System.out.println('Text found')
-		WebUI.takeFullPageScreenshot()
-		WebUI.closeBrowser()
+
+      WebUI.takeScreenshot()
 
         WebUI.closeBrowser()
+
+      
     } else {
         WebUI.click(findTestObject('Universal-Contest entry/View More button'))
     }
 }
-
-
 
