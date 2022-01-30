@@ -1,0 +1,38 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Login,Chrome 97.0.4692.99,,,2022-01-30 17:20:24,2022-01-30 17:22:17,1m - 53.076s,PASSED
+,,,,,,,
+Test Cases/Universal/Login/TC-1 Login with Moviestar,Chrome 97.0.4692.99,,,2022-01-30 17:20:24,2022-01-30 17:20:54,29.723s,PASSED
+"openBrowser("""")",Chrome 97.0.4692.99,,,2022-01-30 17:20:24,2022-01-30 17:20:25,0.794s,PASSED
+"setViewPortSize(1920, 1080)",Chrome 97.0.4692.99,,,2022-01-30 17:20:25,2022-01-30 17:20:25,0.119s,PASSED
+navigateToUrl(url),Chrome 97.0.4692.99,,,2022-01-30 17:20:25,2022-01-30 17:20:45,20.251s,PASSED
+delay(5),Chrome 97.0.4692.99,,,2022-01-30 17:20:45,2022-01-30 17:20:50,5.014s,PASSED
+maximizeWindow(),Chrome 97.0.4692.99,,,2022-01-30 17:20:50,2022-01-30 17:20:50,0.117s,PASSED
+"if (verifyTextPresent(""REGISTER / LOGIN"", true, STOP_ON_FAILURE))",Chrome 97.0.4692.99,,,2022-01-30 17:20:50,2022-01-30 17:20:54,3.200s,PASSED
+,,,,,,,
+Test Cases/Universal/Login/TC-3 Login with Director,Chrome 97.0.4692.99,,,2022-01-30 17:20:54,2022-01-30 17:21:22,28.803s,PASSED
+"openBrowser("""")",Chrome 97.0.4692.99,,,2022-01-30 17:20:54,2022-01-30 17:20:54,0.182s,PASSED
+"setViewPortSize(1920, 1080)",Chrome 97.0.4692.99,,,2022-01-30 17:20:54,2022-01-30 17:20:54,0.108s,PASSED
+navigateToUrl(url),Chrome 97.0.4692.99,,,2022-01-30 17:20:54,2022-01-30 17:21:09,15.061s,PASSED
+delay(5),Chrome 97.0.4692.99,,,2022-01-30 17:21:09,2022-01-30 17:21:14,5.002s,PASSED
+maximizeWindow(),Chrome 97.0.4692.99,,,2022-01-30 17:21:14,2022-01-30 17:21:14,0.111s,PASSED
+"if (verifyTextPresent(""REGISTER / LOGIN"", true, STOP_ON_FAILURE))",Chrome 97.0.4692.99,,,2022-01-30 17:21:14,2022-01-30 17:21:17,3.011s,PASSED
+delay(5),Chrome 97.0.4692.99,,,2022-01-30 17:21:17,2022-01-30 17:21:22,5.002s,PASSED
+"takeScreenshot(""/home/knoldus/Katalon Studio/Login.png"")",Chrome 97.0.4692.99,,,2022-01-30 17:21:22,2022-01-30 17:21:22,0.193s,PASSED
+,,,,,,,
+Test Cases/Universal/Login/TC-2 Login with Screenwriter,Chrome 97.0.4692.99,,,2022-01-30 17:21:22,2022-01-30 17:21:47,24.405s,PASSED
+"openBrowser("""")",Chrome 97.0.4692.99,,,2022-01-30 17:21:23,2022-01-30 17:21:23,0.188s,PASSED
+"setViewPortSize(1920, 1080)",Chrome 97.0.4692.99,,,2022-01-30 17:21:23,2022-01-30 17:21:23,0.109s,PASSED
+navigateToUrl(url),Chrome 97.0.4692.99,,,2022-01-30 17:21:23,2022-01-30 17:21:39,15.785s,PASSED
+delay(5),Chrome 97.0.4692.99,,,2022-01-30 17:21:39,2022-01-30 17:21:44,5.002s,PASSED
+maximizeWindow(),Chrome 97.0.4692.99,,,2022-01-30 17:21:44,2022-01-30 17:21:44,0.109s,PASSED
+"if (verifyTextPresent(""REGISTER / LOGIN"", true, STOP_ON_FAILURE))",Chrome 97.0.4692.99,,,2022-01-30 17:21:44,2022-01-30 17:21:47,3.134s,PASSED
+,,,,,,,
+Test Cases/Universal/Login/TC-4 Login with Extra,Chrome 97.0.4692.99,,,2022-01-30 17:21:47,2022-01-30 17:22:17,29.943s,PASSED
+"openBrowser("""")",Chrome 97.0.4692.99,,,2022-01-30 17:21:47,2022-01-30 17:21:47,0.188s,PASSED
+"setViewPortSize(1920, 1080)",Chrome 97.0.4692.99,,,2022-01-30 17:21:47,2022-01-30 17:21:47,0.107s,PASSED
+navigateToUrl(url),Chrome 97.0.4692.99,,,2022-01-30 17:21:47,2022-01-30 17:22:03,16.005s,PASSED
+delay(5),Chrome 97.0.4692.99,,,2022-01-30 17:22:03,2022-01-30 17:22:08,5.002s,PASSED
+maximizeWindow(),Chrome 97.0.4692.99,,,2022-01-30 17:22:08,2022-01-30 17:22:08,0.109s,PASSED
+"if (verifyTextPresent(""REGISTER / LOGIN"", true, STOP_ON_FAILURE))",Chrome 97.0.4692.99,,,2022-01-30 17:22:08,2022-01-30 17:22:12,3.176s,PASSED
+delay(5),Chrome 97.0.4692.99,,,2022-01-30 17:22:12,2022-01-30 17:22:17,5.001s,PASSED
+"takeScreenshot(""/home/knoldus/Katalon Studio/Login.png"")",Chrome 97.0.4692.99,,,2022-01-30 17:22:17,2022-01-30 17:22:17,0.257s,PASSED

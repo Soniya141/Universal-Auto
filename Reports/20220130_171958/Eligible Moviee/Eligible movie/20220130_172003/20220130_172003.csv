@@ -1,0 +1,8 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Eligible movie,Chrome 97.0.4692.99,,,2022-01-30 17:24:19,2022-01-30 17:24:44,24.874s,ERROR
+,,,,,,,
+Test Cases/Universal/Tc-5 Verify the movies on Eligible page,Chrome 97.0.4692.99,,,2022-01-30 17:24:19,2022-01-30 17:24:44,24.659s,ERROR
+"callTestCase(findTestCase(""Universal/Login/TC-2 Login with Screenwriter""), [""Email"":""ankit248@yopmail.com"", ""Pswrd"":""3TL@testing""], STOP_ON_FAILURE)",Chrome 97.0.4692.99,,,2022-01-30 17:24:19,2022-01-30 17:24:43,23.687s,PASSED
+"mouseOver(findTestObject(""Object Repository/eligible movie/Page_Universal All-Access Rewards  Get Rewa_700d57/a_Validate Purchase""))",Chrome 97.0.4692.99,,,2022-01-30 17:24:43,2022-01-30 17:24:43,0.471s,PASSED
+"click(findTestObject(""Object Repository/eligible movie/Page_Universal All-Access Rewards  Get Rewa_700d57/a_Eligible Movies""))",Chrome 97.0.4692.99,,,2022-01-30 17:24:43,2022-01-30 17:24:44,0.234s,PASSED
+rrf,Chrome 97.0.4692.99,,,2022-01-30 17:24:44,2022-01-30 17:24:44,0.010s,ERROR
