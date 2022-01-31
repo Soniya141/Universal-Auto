@@ -17,14 +17,12 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Universal/Login/TC-1 Login with Moviestar'), [('Email') : 'testing12345@yopmail.com', ('Pswrd') : '3TL@testing'], 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Universal/Login/TC-3 Login with Director'), [('Email') : 'test3004@yopmail.com', ('Pswrd') : '3tl@testing'], 
+    FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/Universal Staging/a_Rewards'))
 
-
 WebUI.waitForPageLoad(2)
-
 
 //WebElement.delay(5)//headless
 WebUI.scrollToElement(findTestObject('Object Repository/Universal Staging/div_Show All'), 4)
@@ -41,26 +39,28 @@ if (WebUI.verifyTextPresent(short_des, true, FailureHandling.CONTINUE_ON_FAILURE
     WebUI.navigateToUrl((url + reward_cat) + behavior_id)
 
     WebUI.delay(5)
-	
-	
-	result = WebUI.getText(findTestObject('Object Repository/Universal Staging/Get movie name'))
-		System.out.println(result)
-		WebUI.scrollToPosition(999, 999, FailureHandling.STOP_ON_FAILURE)
-		WebUI.click(findTestObject('Object Repository/Universal Staging/Redeem Now button'))
-		if (WebUI.verifyTextPresent(popup_message, false, FailureHandling.STOP_ON_FAILURE)) {
-			System.out.println("Already reedemed")
-		}
-		else {
-			System.out.println("Successfully reedemed")
-			WebUI.takeScreenshot()
-			WebUI.closeBrowser()
-		}
+
+    result = WebUI.getText(findTestObject('Object Repository/Universal Staging/Get movie name'))
+
+    System.out.println(result)
+
+    WebUI.scrollToPosition(999, 999, FailureHandling.STOP_ON_FAILURE)
+
+    WebUI.click(findTestObject('Object Repository/Universal Staging/Redeem Now button'))
+
+    if (WebUI.verifyTextPresent(popup_message, false, FailureHandling.STOP_ON_FAILURE)) {
+        System.out.println('Already reedemed')
+    } else {
+        System.out.println('Successfully reedemed')
+
+        WebUI.takeScreenshot()
+
+        WebUI.closeBrowser()
+    }
 } else {
     WebUI.closeBrowser()
-	System.out.println("Your testcase has been failed")
+
+    System.out.println('Your testcase has been failed')
 }
 
-
-
-WebUI.closeBrowser()
 
