@@ -20,30 +20,35 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Universal/Login/TC-2 Login with Screenwriter'), [('Email') : 'ankit248@yopmail.com', ('Pswrd') : '3TL@testing'], 
     FailureHandling.STOP_ON_FAILURE)
-
-WebUI.click(findTestObject('Object Repository/triall/Page_Universal All-Access Rewards  Get Rewa_700d57/a_Rewards'))
-
-WebUI.waitForPageLoad(2)
-
-WebUI.scrollToPosition(999, 999, FailureHandling.STOP_ON_FAILURE)
+WebUI.delay(5)
+WebUI.click(findTestObject('Object Repository/Universal Staging/a_Rewards'))
+//WebUI.waitForPageLoad(2)
+//WebUI.delay(5)
+WebUI.scrollToPosition(999, 999, FailureHandling.CONTINUE_ON_FAILURE)
 
 if (WebUI.verifyTextPresent(short_des, true, FailureHandling.CONTINUE_ON_FAILURE)) {
     if (WebUI.verifyTextPresent(long_des, true, FailureHandling.CONTINUE_ON_FAILURE)) {
         WebUI.click(findTestObject('Object Repository/Universal-Contest entry/Reedem now button'))
 		result = WebUI.getText(findTestObject('Object Repository/Universal Staging/Get movie name'))
 		System.out.println(result)
-		WebUI.scrollToPosition(999, 999, FailureHandling.STOP_ON_FAILURE)
+		WebUI.scrollToElement(findTestObject('Object Repository/Universal Staging/Redeem Now button'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 		WebUI.click(findTestObject('Object Repository/Universal Staging/Redeem Now button'))
-		if (WebUI.verifyTextPresent(popup_message, false, FailureHandling.STOP_ON_FAILURE)) {
+		if (WebUI.verifyTextPresent(popup_message, false, FailureHandling.CONTINUE_ON_FAILURE)) {
 			System.out.println("Already reedemed")
 			WebUI.takeScreenshot()
-			WebUI.closeBrowser()
-		}
+			
+		 } else {
+       //WebUI.verifyTextPresent(success_msg, true, FailureHandling.CONTINUE_ON_FAILURE)
+			 WebUI.waitForElementPresent(findTestObject('Object Repository/Universal Staging/Toast message'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+            System.out.println('Successfully reedemed')
 		
-        
+		
     }
-} else {
+      }else {
+	  System.out.println('Your testcase has been failed')
     WebUI.closeBrowser()
-	System.out.println("Your testcase has been failed")
+      }	
 }
+WebUI.takeScreenshot()
+
 

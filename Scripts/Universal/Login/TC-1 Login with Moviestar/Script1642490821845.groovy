@@ -44,8 +44,11 @@ if (WebUI.verifyTextPresent('REGISTER / LOGIN', true, FailureHandling.STOP_ON_FA
 		WebUI.delay(2)
 		
 		
-		result = WebUI.getText(findTestObject('Object Repository/Universal Staging/Tier Name'))
-			System.out.println("Welcome" +result)
+		User_name = WebUI.getText(findTestObject('Object Repository/Universal Staging/Tier Name'))
+		Tier_name = WebUI.getText(findTestObject('Object Repository/Universal Staging/Tier Namee'), FailureHandling.CONTINUE_ON_FAILURE)
+			System.out.println("Welcome " +User_name)
+			System.out.println("you are in " +Tier_name)
+			
 			WebUI.takeScreenshot()
 			
 }else {

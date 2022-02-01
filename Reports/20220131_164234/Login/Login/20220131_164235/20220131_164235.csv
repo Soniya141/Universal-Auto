@@ -1,0 +1,36 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Login,Firefox 96.0,,,2022-01-31 16:43:04,2022-01-31 16:45:10,2m - 6.001s,PASSED
+,,,,,,,
+Test Cases/Universal/Login/TC-1 Login with Moviestar,Firefox 96.0,,,2022-01-31 16:43:04,2022-01-31 16:43:38,33.510s,PASSED
+"openBrowser("""")",Firefox 96.0,,,2022-01-31 16:43:05,2022-01-31 16:43:07,2.122s,PASSED
+"setViewPortSize(1920, 1080)",Firefox 96.0,,,2022-01-31 16:43:07,2022-01-31 16:43:07,0.043s,PASSED
+navigateToUrl(url),Firefox 96.0,,,2022-01-31 16:43:07,2022-01-31 16:43:29,22.380s,PASSED
+delay(5),Firefox 96.0,,,2022-01-31 16:43:29,2022-01-31 16:43:34,5.016s,PASSED
+maximizeWindow(),Firefox 96.0,,,2022-01-31 16:43:34,2022-01-31 16:43:34,0.275s,PASSED
+"if (verifyTextPresent(""REGISTER / LOGIN"", true, STOP_ON_FAILURE))",Firefox 96.0,,,2022-01-31 16:43:34,2022-01-31 16:43:38,3.439s,PASSED
+,,,,,,,
+Test Cases/Universal/Login/TC-3 Login with Director,Firefox 96.0,,,2022-01-31 16:43:38,2022-01-31 16:44:06,28.187s,PASSED
+"openBrowser("""")",Firefox 96.0,,,2022-01-31 16:43:38,2022-01-31 16:43:40,1.881s,PASSED
+"setViewPortSize(1920, 1080)",Firefox 96.0,,,2022-01-31 16:43:40,2022-01-31 16:43:40,0.024s,PASSED
+navigateToUrl(url),Firefox 96.0,,,2022-01-31 16:43:40,2022-01-31 16:43:57,17.591s,PASSED
+delay(5),Firefox 96.0,,,2022-01-31 16:43:57,2022-01-31 16:44:02,5.003s,PASSED
+maximizeWindow(),Firefox 96.0,,,2022-01-31 16:44:02,2022-01-31 16:44:03,0.260s,PASSED
+"if (verifyTextPresent(""REGISTER / LOGIN"", true, STOP_ON_FAILURE))",Firefox 96.0,,,2022-01-31 16:44:03,2022-01-31 16:44:06,3.240s,PASSED
+,,,,,,,
+Test Cases/Universal/Login/TC-2 Login with Screenwriter,Firefox 96.0,,,2022-01-31 16:44:06,2022-01-31 16:44:36,30.161s,PASSED
+"openBrowser("""")",Firefox 96.0,,,2022-01-31 16:44:06,2022-01-31 16:44:08,1.901s,PASSED
+"setViewPortSize(1920, 1080)",Firefox 96.0,,,2022-01-31 16:44:08,2022-01-31 16:44:08,0.029s,PASSED
+navigateToUrl(url),Firefox 96.0,,,2022-01-31 16:44:08,2022-01-31 16:44:28,19.553s,PASSED
+delay(5),Firefox 96.0,,,2022-01-31 16:44:28,2022-01-31 16:44:33,5.002s,PASSED
+maximizeWindow(),Firefox 96.0,,,2022-01-31 16:44:33,2022-01-31 16:44:33,0.260s,PASSED
+"if (verifyTextPresent(""REGISTER / LOGIN"", true, STOP_ON_FAILURE))",Firefox 96.0,,,2022-01-31 16:44:33,2022-01-31 16:44:36,3.274s,PASSED
+,,,,,,,
+Test Cases/Universal/Login/TC-4 Login with Extra,Firefox 96.0,,,2022-01-31 16:44:36,2022-01-31 16:45:10,33.950s,PASSED
+"openBrowser("""")",Firefox 96.0,,,2022-01-31 16:44:36,2022-01-31 16:44:38,1.907s,PASSED
+"setViewPortSize(1920, 1080)",Firefox 96.0,,,2022-01-31 16:44:38,2022-01-31 16:44:38,0.016s,PASSED
+navigateToUrl(url),Firefox 96.0,,,2022-01-31 16:44:38,2022-01-31 16:44:56,18.139s,PASSED
+delay(5),Firefox 96.0,,,2022-01-31 16:44:56,2022-01-31 16:45:01,5.003s,PASSED
+maximizeWindow(),Firefox 96.0,,,2022-01-31 16:45:01,2022-01-31 16:45:02,0.260s,PASSED
+"if (verifyTextPresent(""REGISTER / LOGIN"", true, STOP_ON_FAILURE))",Firefox 96.0,,,2022-01-31 16:45:02,2022-01-31 16:45:05,3.331s,PASSED
+delay(5),Firefox 96.0,,,2022-01-31 16:45:05,2022-01-31 16:45:10,5.001s,PASSED
+"takeScreenshot(""/home/knoldus/Katalon Studio/Login.png"")",Firefox 96.0,,,2022-01-31 16:45:10,2022-01-31 16:45:10,0.113s,PASSED

@@ -20,7 +20,7 @@
       <name>Short_des</name>
    </variable>
    <variable>
-      <defaultValue>'8be1c7b396cf9d694babd31c3202f0bc-9ef6e6b92d1f5ca1fd4e6cac7d048def'</defaultValue>
+      <defaultValue>'8be1c7b396cf9d694babd31c3202f0bc-b4be01f3ba2f6de759738fb625d165da'</defaultValue>
       <description></description>
       <id>dfa5fce2-9b48-4ad0-a55f-26b34e32f661</id>
       <masked>false</masked>
@@ -39,5 +39,26 @@
       <id>5ab1f738-82fb-4300-873a-f7f040cb6410</id>
       <masked>false</masked>
       <name>popup_message</name>
+   </variable>
+   <variable>
+      <defaultValue>'https://universal.3tlstaging.com/reward-preview/'</defaultValue>
+      <description></description>
+      <id>57b9868b-6d78-48d7-aeba-25a916779e4d</id>
+      <masked>false</masked>
+      <name>url</name>
+   </variable>
+   <variable>
+      <defaultValue>'Sorry! This reward can only be redeemed once.'</defaultValue>
+      <description></description>
+      <id>7bad59e8-b42d-405d-a97a-6095d86af06f</id>
+      <masked>false</masked>
+      <name>Toast_msg</name>
+   </variable>
+   <variable>
+      <defaultValue>'You\'ve redeemed a reward!'</defaultValue>
+      <description></description>
+      <id>729eb406-0834-4c32-aa3a-d17daf30b54b</id>
+      <masked>false</masked>
+      <name>success_msg</name>
    </variable>
 </TestCaseEntity>

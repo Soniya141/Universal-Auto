@@ -16,12 +16,15 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.WebDriver as WebDriver
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 
 WebUI.callTestCase(findTestCase('Universal/Login/TC-2 Login with Screenwriter'), [('Email') : 'ankit248@yopmail.com', ('Pswrd') : '3TL@testing'], 
-    FailureHandling.STOP_ON_FAILURE)
+    FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForPageLoad(3)
+WebUI.delay(5)
 
+//WebUI.waitForPageLoad(3)
 WebUI.click(findTestObject('Object Repository/Reward page/Page_Universal All-Access Rewards  Get Rewa_700d57/a_Rewards'))
 
 WebUI.scrollToElement(findTestObject('Object Repository/Reward page/Page_Universal All-Access Rewards  Get Rewa_700d57/div_Show All'), 
@@ -32,6 +35,7 @@ WebUI.click(findTestObject('Object Repository/Reward page/Page_Universal All-Acc
 WebUI.click(findTestObject('Object Repository/Reward page/Page_Universal All-Access Rewards  Get Rewa_700d57/span_Digital'))
 
 WebUI.scrollToPosition(999, 999, FailureHandling.STOP_ON_FAILURE)
+
 WebUI.click(findTestObject('Object Repository/Reward page/Page_Universal All-Access Rewards  Get Rewa_700d57/div_1K PointsBeethovens Big BreakDigital Mo_cf5511'))
 
 WebUI.takeScreenshot()
@@ -40,24 +44,33 @@ WebUI.delay(3)
 
 if (WebUI.verifyTextPresent(Title, true, FailureHandling.CONTINUE_ON_FAILURE)) {
     if (WebUI.verifyTextPresent(Short_des, true, FailureHandling.CONTINUE_ON_FAILURE)) {
-        
-        WebUI.navigateToUrl('https://universal.3tlstaging.com/reward-preview/' + behavior_id)
-		result = WebUI.getText(findTestObject('Object Repository/Universal Staging/Get movie name'))
-		System.out.println("Movie Name is"  +result)
-		WebUI.scrollToPosition(999, 999, FailureHandling.STOP_ON_FAILURE)
-		WebUI.click(findTestObject('Object Repository/Universal Staging/Redeem Now button'))
-		if (WebUI.verifyTextPresent(popup_message, false, FailureHandling.STOP_ON_FAILURE)) {
-			System.out.println("Already reedemed")
-			WebUI.takeScreenshot()
-			WebUI.closeBrowser()
-		}
-		else {
-			System.out.println("Successfully reedemed")
-			WebUI.closeBrowser()
-		}
-       
-		
+        WebUI.navigateToUrl(url + behavior_id)
+
+        //WebUI.delay(2)
+        result = WebUI.getText(findTestObject('Object Repository/Universal Staging/Get movie name'))
+
+        System.out.println('Movie Name is' + result)
+
+        WebUI.scrollToElement(findTestObject('Object Repository/Universal Staging/Redeem Now button'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+
+        //WebUI.scrollToPosition(999, 999, FailureHandling.STOP_ON_FAILURE)
+        WebUI.click(findTestObject('Object Repository/Universal Staging/Redeem Now button'))
+
+        WebUI.delay(2)
+
+        if (WebUI.verifyTextPresent(popup_message, true, FailureHandling.CONTINUE_ON_FAILURE)) {
+            System.out.println('Already reedemed')
+        } else {
+            WebUI.verifyTextPresent(success_msg, true, FailureHandling.CONTINUE_ON_FAILURE)
+
+            System.out.println('Successfully reedemed')
+        }
     }
+} else {
+    System.out.println('Your testcase has been failed')
 }
 
 WebUI.closeBrowser()
+
+
+

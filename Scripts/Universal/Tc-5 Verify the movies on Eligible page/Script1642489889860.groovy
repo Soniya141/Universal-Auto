@@ -24,10 +24,6 @@ WebUI.mouseOver(findTestObject('Object Repository/eligible movie/Page_Universal 
 
 WebUI.click(findTestObject('Object Repository/eligible movie/Page_Universal All-Access Rewards  Get Rewa_700d57/a_Eligible Movies'))
 
-
-rrf
-
-
 WebUI.delay(2)
 
 WebUI.scrollToPosition(999, 999, FailureHandling.CONTINUE_ON_FAILURE)
@@ -48,4 +44,4 @@ if (WebUI.verifyTextPresent(title, true)) {
     WebUI.closeBrowser()
 	
 }
-WebUI.closeBrowser()
+

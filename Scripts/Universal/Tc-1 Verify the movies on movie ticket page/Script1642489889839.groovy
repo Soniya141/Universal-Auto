@@ -14,11 +14,13 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword
+import com.kms.katalon.core.webui.common.WebUiCommonHelper
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.WebElement as WebElement;
 import com.kms.katalon.core.util.KeywordUtil
 //System.setProperty("webdriver.chrome.driver", "/home/knoldus/Desktop/chromedriver_linux64/chromedriver");
 //ChromeOptions options =new ChromeOptions()
@@ -43,23 +45,27 @@ WebUI.scrollToPosition(999, 999, FailureHandling.STOP_ON_FAILURE)
 
 
 WebUI.delay(5)
-List listofelements = WebUI.findWebElements(findTestObject('Object Repository/Universal Staging/Movies images'), 10)
-for(int i=0;i<listofelements.size();i++) {
+List <WebElement> listofelements = WebUiCommonHelper.findWebElements(findTestObject('Object Repository/Universal Staging/Movies images'), 10)
+for(WebElement element :listofelements) {
+	if((MovieTitle==element.getAttribute('alt'))&&(Imageurl==element.getAttribute('src'))) {
+	
+		//WebUI.click(WebUI.convertWebElementToTestObject(element), FailureHandling.CONTINUE_ON_FAILURE)
+	
 //WebUI.verifyElementPresent(findTestObject('Object Repository/Universal Staging/Movies images'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 //boolean flag= WebUI.verifyElementPresent(findTestObject('',20,FailureHandling.CONTINUE_ON_FAILURE))
 	
-	//result=WebUI.(findTestObject('Object Repository/Universal Staging/Movies images'), null, FailureHandling.STOP_ON_FAILURE)
+	//result=WebUI.getAttribute(findTestObject('Object Repository/Universal Staging/Movies images'), 'alt', FailureHandling.STOP_ON_FAILURE)
 	//img=WebUI.findWebElements(findTestObject('Object Repository/Universal Staging/Movies images),2)
-//KeywordUtil.logInfo(listofelements.get(i))
-	
-result=WebUI.getAttribute(findTestObject('Object Repository/Universal Staging/Movies images'), 'alt', FailureHandling.CONTINUE_ON_FAILURE)
+//KeywordUtil.logInfo(listofelements.get(i)
+//result=element.getAttribute(findTestObject('alt'), FailureHandling.CONTINUE_ON_FAILURE)
 	//result = WebUI.getText(findTestObject('Object Repository/Universal Staging/Movies images'))
-	
-	System.out.println(result)
-}
+	//
+		Result=WebUI.getText(element, FailureHandling.CONTINUE_ON_FAILURE)
+	System.out.println("Your move name is"  +Result)
+	}
 
 //WebUI.verify(findTestObject('Object Repository/demo/Page_Universal All-Access Rewards  Get Rewa_700d57/img_Regal Movie Tickets Eligible for Points_debac9'), 0)
 //WebUI.takeElementScreenshot(findTestObject('Object Repository/demo/Page_Universal All-Access Rewards  Get Rewa_700d57/img_Regal Movie Tickets Eligible for Points_debac9'), '/home/knoldus/Katalon Studio/h.png', FailureHandling.STOP_ON_FAILURE)
 //WebUI.takeScreenshot('/home/knoldus/Katalon Studio/hm.png')
-
+}

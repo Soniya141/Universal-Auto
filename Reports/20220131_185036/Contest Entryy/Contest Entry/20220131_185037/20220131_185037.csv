@@ -1,0 +1,5 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Contest Entry,Chrome 97.0.4692.99,,,2022-01-31 18:50:51,2022-01-31 18:50:59,8.724s,FAILED
+,,,,,,,
+Test Cases/Universal/Tc-6- Verify the Contest entry on reward page,Chrome 97.0.4692.99,,,2022-01-31 18:50:51,2022-01-31 18:50:59,8.456s,FAILED
+"callTestCase(findTestCase(""Universal/Login/TC-2 Login with Screenwriter""), [""Email"":""ankit248@yopmail.com"", ""Pswrd"":""3TL@testing""], STOP_ON_FAILURE)",Chrome 97.0.4692.99,,,2022-01-31 18:50:51,2022-01-31 18:50:59,8.140s,FAILED

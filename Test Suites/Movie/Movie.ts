@@ -16,5 +16,23 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Universal/Tc-1 Verify the movies on movie ticket page</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>84df09b9-2848-4d80-9fc1-9dad3fbacc5a</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>ea5d2eee-c083-438e-8bc1-78d3de4a696c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>45f96c9f-f45c-463e-b775-bf274dd166da</variableId>
+      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

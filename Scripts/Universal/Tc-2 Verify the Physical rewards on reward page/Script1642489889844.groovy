@@ -19,48 +19,41 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Universal/Login/TC-3 Login with Director'), [('Email') : 'test3004@yopmail.com', ('Pswrd') : '3tl@testing'], 
     FailureHandling.CONTINUE_ON_FAILURE)
-
+WebUI.delay(5)
 WebUI.click(findTestObject('Object Repository/Universal Staging/a_Rewards'))
+//WebUI.waitForPageLoad(2)
 
-WebUI.waitForPageLoad(2)
 
-//WebElement.delay(5)//headless
 WebUI.scrollToElement(findTestObject('Object Repository/Universal Staging/div_Show All'), 4)
-
 WebUI.click(findTestObject('Object Repository/Universal Staging/div_Show All'))
-
-WebUI.delay(2)
-
+//WebUI.delay(2)
 WebUI.click(findTestObject('Object Repository/Universal Staging/span_Physical'))
+//WebUI.scrollToPosition(9999, 9999, FailureHandling.STOP_ON_FAILURE)
+//WebUI.delay(3)
 
-WebUI.scrollToPosition(99999, 99999, FailureHandling.STOP_ON_FAILURE)
-
-if (WebUI.verifyTextPresent(short_des, true, FailureHandling.CONTINUE_ON_FAILURE)) {
-    WebUI.navigateToUrl((url + reward_cat) + behavior_id)
-
-    WebUI.delay(5)
-
-    result = WebUI.getText(findTestObject('Object Repository/Universal Staging/Get movie name'))
-
-    System.out.println(result)
-
-    WebUI.scrollToPosition(999, 999, FailureHandling.STOP_ON_FAILURE)
-
-    WebUI.click(findTestObject('Object Repository/Universal Staging/Redeem Now button'))
-
-    if (WebUI.verifyTextPresent(popup_message, false, FailureHandling.STOP_ON_FAILURE)) {
+	if (WebUI.verifyTextPresent(short_des, true, FailureHandling.CONTINUE_ON_FAILURE)) {
+		WebUI.navigateToUrl(url + reward_cat + behavior_id)
+   //WebUI.delay(3)
+   
+	//WebUI.delay(5)
+	result = WebUI.getText(findTestObject('Object Repository/Universal Staging/Get movie name'))
+		System.out.println("Movie Name is"  +result)
+		WebUI.scrollToElement(findTestObject('Object Repository/Universal Staging/Redeem Now button'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+	//WebUI.scrollToPosition(999, 999, FailureHandling.STOP_ON_FAILURE)
+	WebUI.click(findTestObject('Object Repository/Universal Staging/Redeem Now button'))
+      WebUI.delay(2)
+		if (WebUI.verifyTextPresent(popup_message, true, FailureHandling.CONTINUE_ON_FAILURE)) {
         System.out.println('Already reedemed')
-    } else {
+		} else {
         System.out.println('Successfully reedemed')
-
-        WebUI.takeScreenshot()
-
-        WebUI.closeBrowser()
-    }
-} else {
+		WebUI.takeScreenshot()
+		WebUI.closeBrowser()
+		}
+      }else {
+	  System.out.println('Your testcase has been failed')
     WebUI.closeBrowser()
-
-    System.out.println('Your testcase has been failed')
-}
+	
 
 
+
+      }

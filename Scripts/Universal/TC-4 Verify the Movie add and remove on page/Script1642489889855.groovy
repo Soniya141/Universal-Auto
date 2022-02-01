@@ -40,7 +40,9 @@ while (!(WebUI.verifyElementPresent(findTestObject('Universal Staging/All Reward
 
     WebUI.delay(3)
 
-   WebUI.takeFullPageScreenshot()
-			WebUI.closeBrowser()
 }
-WebUI.closeBrowser()
+	WebUI.takeFullPageScreenshot()
+			WebUI.closeBrowser()
+			
+
+

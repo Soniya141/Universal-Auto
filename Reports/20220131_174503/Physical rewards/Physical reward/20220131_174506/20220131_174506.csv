@@ -1,0 +1,14 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Physical reward,Firefox 96.0,,,2022-01-31 17:48:30,2022-01-31 17:50:54,2m - 24.082s,FAILED
+,,,,,,,
+Test Cases/Universal/Tc-2 Verify the Physical rewards on reward page,Firefox 96.0,rewards,,2022-01-31 17:48:30,2022-01-31 17:50:54,2m - 23.882s,FAILED
+"callTestCase(findTestCase(""Universal/Login/TC-3 Login with Director""), [""Email"":""test3004@yopmail.com"", ""Pswrd"":""3tl@testing""], CONTINUE_ON_FAILURE)",Firefox 96.0,,,2022-01-31 17:48:30,2022-01-31 17:49:16,45.732s,PASSED
+"click(findTestObject(""Object Repository/Universal Staging/a_Rewards""))",Firefox 96.0,,,2022-01-31 17:49:16,2022-01-31 17:49:17,0.483s,PASSED
+waitForPageLoad(2),Firefox 96.0,,,2022-01-31 17:49:17,2022-01-31 17:49:17,0.086s,PASSED
+"scrollToElement(findTestObject(""Object Repository/Universal Staging/div_Show All""), 4)",Firefox 96.0,,,2022-01-31 17:49:17,2022-01-31 17:49:48,31.223s,PASSED
+"click(findTestObject(""Object Repository/Universal Staging/div_Show All""))",Firefox 96.0,,,2022-01-31 17:49:48,2022-01-31 17:50:19,31.412s,PASSED
+delay(2),Firefox 96.0,,,2022-01-31 17:50:19,2022-01-31 17:50:21,2.002s,PASSED
+"click(findTestObject(""Object Repository/Universal Staging/span_Physical""))",Firefox 96.0,,,2022-01-31 17:50:21,2022-01-31 17:50:53,31.804s,PASSED
+"scrollToPosition(99999, 99999, STOP_ON_FAILURE)",Firefox 96.0,,,2022-01-31 17:50:53,2022-01-31 17:50:53,0.017s,PASSED
+"if (verifyTextPresent(short_des, true, CONTINUE_ON_FAILURE))",Firefox 96.0,,,2022-01-31 17:50:53,2022-01-31 17:50:54,0.540s,FAILED
+else,Firefox 96.0,,,2022-01-31 17:50:54,2022-01-31 17:50:54,0.324s,PASSED

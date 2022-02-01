@@ -1,0 +1,10 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Eligible movie,Firefox 96.0,,,2022-01-31 16:47:32,2022-01-31 16:48:03,31.664s,PASSED
+,,,,,,,
+Test Cases/Universal/Tc-5 Verify the movies on Eligible page,Firefox 96.0,,,2022-01-31 16:47:32,2022-01-31 16:48:03,31.480s,PASSED
+"callTestCase(findTestCase(""Universal/Login/TC-2 Login with Screenwriter""), [""Email"":""ankit248@yopmail.com"", ""Pswrd"":""3TL@testing""], STOP_ON_FAILURE)",Firefox 96.0,,,2022-01-31 16:47:32,2022-01-31 16:47:58,26.361s,PASSED
+"mouseOver(findTestObject(""Object Repository/eligible movie/Page_Universal All-Access Rewards  Get Rewa_700d57/a_Validate Purchase""))",Firefox 96.0,,,2022-01-31 16:47:58,2022-01-31 16:47:59,0.298s,PASSED
+"click(findTestObject(""Object Repository/eligible movie/Page_Universal All-Access Rewards  Get Rewa_700d57/a_Eligible Movies""))",Firefox 96.0,,,2022-01-31 16:47:59,2022-01-31 16:47:59,0.334s,PASSED
+delay(2),Firefox 96.0,,,2022-01-31 16:47:59,2022-01-31 16:48:01,2.002s,PASSED
+"scrollToPosition(999, 999, CONTINUE_ON_FAILURE)",Firefox 96.0,,,2022-01-31 16:48:01,2022-01-31 16:48:01,0.020s,PASSED
+"if (verifyTextPresent(title, true))",Firefox 96.0,,,2022-01-31 16:48:01,2022-01-31 16:48:03,2.193s,PASSED
