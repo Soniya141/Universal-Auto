@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>76a27bdb-5fa2-4652-9128-87e9d59b20f1</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Universal/Login/TC-1 Login with Moviestar</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -38,7 +38,7 @@
    <testCaseLink>
       <guid>8a6ee636-d0e1-4a05-b84e-108b48a615d3</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Universal/Login/TC-3 Login with Director</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -56,7 +56,7 @@
    <testCaseLink>
       <guid>c3b24039-6a49-40f9-8110-915778615d85</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Universal/Login/TC-2 Login with Screenwriter</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -74,7 +74,7 @@
    <testCaseLink>
       <guid>253cb894-cb9e-411d-9bc4-435c2bff5e62</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Universal/Login/TC-4 Login with Extra</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
