@@ -89,31 +89,4 @@
          <variableId>a8f43b2d-1f27-484a-a740-5e374e46ce70</variableId>
       </variableLink>
    </testCaseLink>
-   <testCaseLink>
-      <guid>e360edb7-d430-43cb-b591-2f11717bd3ef</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Universal/Login/Login with Users</testCaseId>
-      <testDataLink>
-         <combinationType>ONE</combinationType>
-         <id>1d48bd36-cf2f-4054-bfa8-506a75533af4</id>
-         <iterationEntity>
-            <iterationType>ALL</iterationType>
-            <value></value>
-         </iterationEntity>
-         <testDataId>Data Files/Loginn</testDataId>
-      </testDataLink>
-      <variableLink>
-         <testDataLinkId>1d48bd36-cf2f-4054-bfa8-506a75533af4</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>Email</value>
-         <variableId>0d88614c-46db-4f05-b34f-c56c206ab7d4</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>1d48bd36-cf2f-4054-bfa8-506a75533af4</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>Pswrd</value>
-         <variableId>ecc2f645-a42f-4287-86b5-3598d9f00f56</variableId>
-      </variableLink>
-   </testCaseLink>
 </TestSuiteEntity>
