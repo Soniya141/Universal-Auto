@@ -1,0 +1,13 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Contest Entry,Firefox 96.0,,,2022-02-02 12:58:27,2022-02-02 12:59:23,55.879s,PASSED
+,,,,,,,
+Test Cases/Universal/Tc-6- Verify the Contest entry on reward page,Firefox 96.0,,,2022-02-02 12:58:27,2022-02-02 12:59:23,55.578s,PASSED
+"callTestCase(findTestCase(""Universal/Login/TC-1 Login with Moviestar""), [""Email"":""testing12345@yopmail.com"", ""Pswrd"":""3TL@testing"", ""url"":""https://universal.3tlstaging.com/home""], CONTINUE_ON_FAILURE)",Firefox 96.0,,,2022-02-02 12:58:27,2022-02-02 12:59:08,40.289s,PASSED
+delay(5),Firefox 96.0,,,2022-02-02 12:59:08,2022-02-02 12:59:13,5.003s,PASSED
+"click(findTestObject(""Object Repository/Universal Staging/a_Rewards""))",Firefox 96.0,,,2022-02-02 12:59:13,2022-02-02 12:59:13,0.381s,PASSED
+"scrollToElement(findTestObject(""Object Repository/Reward page/Page_Universal All-Access Rewards  Get Rewa_700d57/div_Show All""), 0, STOP_ON_FAILURE)",Firefox 96.0,,,2022-02-02 12:59:13,2022-02-02 12:59:13,0.046s,PASSED
+"click(findTestObject(""Object Repository/Reward page/Page_Universal All-Access Rewards  Get Rewa_700d57/div_Show All""))",Firefox 96.0,,,2022-02-02 12:59:13,2022-02-02 12:59:14,1.424s,PASSED
+"click(findTestObject(""Object Repository/Reward page/Page_Universal All-Access Rewards  Get Rewa_700d57/span_Digital""))",Firefox 96.0,,,2022-02-02 12:59:14,2022-02-02 12:59:15,0.756s,PASSED
+"scrollToPosition(999, 999, CONTINUE_ON_FAILURE)",Firefox 96.0,,,2022-02-02 12:59:15,2022-02-02 12:59:15,0.236s,PASSED
+"if (verifyTextPresent(short_des, true, CONTINUE_ON_FAILURE))",Firefox 96.0,,,2022-02-02 12:59:15,2022-02-02 12:59:22,6.655s,PASSED
+closeBrowser(),Firefox 96.0,,,2022-02-02 12:59:22,2022-02-02 12:59:23,0.436s,PASSED

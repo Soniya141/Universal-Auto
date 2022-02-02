@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.WebDriver as WebDriver
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 
-WebUI.callTestCase(findTestCase('Universal/Login/TC-2 Login with Screenwriter'), [('Email') : 'ankit248@yopmail.com', ('Pswrd') : '3TL@testing'], 
+WebUI.callTestCase(findTestCase('Universal/Login/TC-3 Login with Director'), [('Email') : 'test3004@yopmail.com', ('Pswrd') : '3tl@testing'], 
     FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.delay(5)
@@ -29,6 +29,7 @@ WebUI.click(findTestObject('Object Repository/Reward page/Page_Universal All-Acc
 
 WebUI.scrollToElement(findTestObject('Object Repository/Reward page/Page_Universal All-Access Rewards  Get Rewa_700d57/div_Show All'), 
     0, FailureHandling.STOP_ON_FAILURE)
+
 
 WebUI.click(findTestObject('Object Repository/Reward page/Page_Universal All-Access Rewards  Get Rewa_700d57/div_Show All'))
 
@@ -42,7 +43,7 @@ WebUI.takeScreenshot()
 
 WebUI.delay(3)
 
-if (WebUI.verifyTextPresent(Title, true, FailureHandling.CONTINUE_ON_FAILURE)) {
+if (WebUI.verifyTextPresent(Title, true, FailureHandling.OPTIONAL)) {
     if (WebUI.verifyTextPresent(Short_des, true, FailureHandling.CONTINUE_ON_FAILURE)) {
         WebUI.navigateToUrl(url + behavior_id)
 
@@ -56,21 +57,22 @@ if (WebUI.verifyTextPresent(Title, true, FailureHandling.CONTINUE_ON_FAILURE)) {
         //WebUI.scrollToPosition(999, 999, FailureHandling.STOP_ON_FAILURE)
         WebUI.click(findTestObject('Object Repository/Universal Staging/Redeem Now button'))
 
-        WebUI.delay(2)
+        WebUI.delay(5)
 
-        if (WebUI.verifyTextPresent(popup_message, true, FailureHandling.CONTINUE_ON_FAILURE)) {
-            System.out.println('Already reedemed')
+        if (WebUI.verifyElementPresent(findTestObject('Object Repository/Universal Staging/Toast message'), 0, FailureHandling.CONTINUE_ON_FAILURE)) {
+            //if (WebUI.verifyTextPresent(popup_message, true, FailureHandling.CONTINUE_ON_FAILURE)) {
+            Toastmessage = WebUI.getText(findTestObject('Object Repository/Universal Staging/Toast message'), FailureHandling.CONTINUE_ON_FAILURE)
+
+            System.out.println('Already reedemed  ' + Toastmessage)
         } else {
-            WebUI.verifyTextPresent(success_msg, true, FailureHandling.CONTINUE_ON_FAILURE)
+            WebUI.verifyTextPresent(success_msg, false, FailureHandling.STOP_ON_FAILURE)
 
             System.out.println('Successfully reedemed')
         }
+    } else {
+        System.out.println('Your testcase has been failed')
     }
-} else {
-    System.out.println('Your testcase has been failed')
 }
 
 WebUI.closeBrowser()
-
-
 

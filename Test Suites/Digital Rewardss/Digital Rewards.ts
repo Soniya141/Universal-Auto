@@ -12,7 +12,7 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>4d4a4401-f6cb-411b-bab0-c7b4c8814f79</testSuiteGuid>
    <testCaseLink>
-      <guid>13ecbab7-c588-4cf0-adce-7c0384b9a549</guid>
+      <guid>eadfda35-462e-4aba-813c-dbd6b4954296</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Universal/Tc-3 Verify the Digital rewards on reward page</testCaseId>

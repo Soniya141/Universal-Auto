@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Contest Entry" time="62.603" tests="1" failures="0" errors="0">
+   <testsuite name="Contest Entry" tests="1" failures="0" errors="0" time="62.603" skipped="0" timestamp="2022-02-02 12:55:09" hostname="knoldus - knoldus-Latitude-3520" id="Test Suites/Contest Entryy/Contest Entry">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/home/knoldus/git/Universal-Auto/Reports/20220202_124732/Contest Entryy/Contest Entry/20220202_124741"/>
+         <property name="logFiles" value="/home/knoldus/git/Universal-Auto/Reports/20220202_124732/Contest Entryy/Contest Entry/20220202_124741/execution0.log"/>
+         <property name="attachments" value="/home/knoldus/git/Universal-Auto/Reports/20220202_124732/Contest Entryy/Contest Entry/20220202_124741/1643786756819.png"/>
+         <property name="hostName" value="knoldus - knoldus-Latitude-3520"/>
+         <property name="os" value="Linux 64bit"/>
+         <property name="katalonVersion" value="8.2.0.208"/>
+         <property name="browser" value="Firefox 96.0"/>
+         <property name="hostAddress" value="127.0.1.1"/>
+         <property name="sessionId" value="5c33e155-17bd-4948-8b88-28cfab40e7d3"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Linux"/>
+      </properties>
+      <testcase name="Test Cases/Universal/Tc-6- Verify the Contest entry on reward page" time="62.394" classname="Test Cases/Universal/Tc-6- Verify the Contest entry on reward page" status="PASSED">
+         <system-out><![CDATA[2022-02-02 12:55:09 - [TEST_CASE][PASSED] - Test Cases/Universal/Tc-6- Verify the Contest entry on reward page: Test Cases/Universal/Tc-6- Verify the Contest entry on reward page
+
+2022-02-02 12:55:10 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Universal/Login/TC-1 Login with Moviestar"), ["Email":"testing12345@yopmail.com", "Pswrd":"3TL@testing", "url":"https://universal.3tlstaging.com/home"], CONTINUE_ON_FAILURE): Call Test Case 'Test Cases/Universal/Login/TC-1 Login with Moviestar' successfully
+
+2022-02-02 12:55:10 - [TEST_CASE][PASSED] - Test Cases/Universal/Login/TC-1 Login with Moviestar: Test Cases/Universal/Login/TC-1 Login with Moviestar
+
+2022-02-02 12:55:10 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2022-02-02 12:55:10 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2022-02-02 12:55:10 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-02-02 12:55:12 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2022-02-02 12:55:12 - [TEST_STEP][PASSED] - setViewPortSize(1920, 1080): Viewport is set to new size with width = 1920 and height = 1080
+
+2022-02-02 12:55:12 - [MESSAGE][PASSED] - Viewport is set to new size with width = 1920 and height = 1080
+
+2022-02-02 12:55:12 - [TEST_STEP][PASSED] - navigateToUrl(url): Navigate to 'https://universal.3tlstaging.com/home' successfully
+
+2022-02-02 12:55:48 - [MESSAGE][PASSED] - Navigate to 'https://universal.3tlstaging.com/home' successfully
+
+2022-02-02 12:55:48 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2022-02-02 12:55:53 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2022-02-02 12:55:53 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2022-02-02 12:55:53 - [MESSAGE][PASSED] - Current window maximized
+
+2022-02-02 12:55:53 - [TEST_STEP][PASSED] - if (verifyTextPresent("REGISTER / LOGIN", true, STOP_ON_FAILURE)): null
+
+2022-02-02 12:55:53 - [MESSAGE][PASSED] - Text 'REGISTER / LOGIN' is present on page  using regular expression
+
+2022-02-02 12:55:53 - [TEST_STEP][PASSED] - click(findTestObject("Universal Staging/a_Register  Login")): Object: 'Object Repository/Universal Staging/a_Register  Login' is clicked on
+
+2022-02-02 12:55:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Universal Staging/a_Register  Login' is clicked on
+
+2022-02-02 12:55:54 - [TEST_STEP][PASSED] - setText(findTestObject("Universal Staging/input_USERNAME OR EMAIL_mat-input-0"), Email): Text 'testing12345@yopmail.com' is set on object 'Object Repository/Universal Staging/input_USERNAME OR EMAIL_mat-input-0'
+
+2022-02-02 12:55:54 - [MESSAGE][PASSED] - Text 'testing12345@yopmail.com' is set on object 'Object Repository/Universal Staging/input_USERNAME OR EMAIL_mat-input-0'
+
+2022-02-02 12:55:54 - [TEST_STEP][PASSED] - setText(findTestObject("Universal Staging/input_PASSWORD_mat-input-1"), Pswrd): Text '3TL@testing' is set on object 'Object Repository/Universal Staging/input_PASSWORD_mat-input-1'
+
+2022-02-02 12:55:54 - [MESSAGE][PASSED] - Text '3TL@testing' is set on object 'Object Repository/Universal Staging/input_PASSWORD_mat-input-1'
+
+2022-02-02 12:55:54 - [TEST_STEP][PASSED] - click(findTestObject("Universal Staging/button_Login")): Object: 'Object Repository/Universal Staging/button_Login' is clicked on
+
+2022-02-02 12:55:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Universal Staging/button_Login' is clicked on
+
+2022-02-02 12:55:54 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2022-02-02 12:55:56 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2022-02-02 12:55:56 - [TEST_STEP][PASSED] - User_name = getText(findTestObject("Object Repository/Universal Staging/Tier Name")): Text of object 'Object Repository/Universal Staging/Tier Name' is: 'Ankit Kumar'
+
+2022-02-02 12:55:56 - [MESSAGE][PASSED] - Text of object 'Object Repository/Universal Staging/Tier Name' is: 'Ankit Kumar'
+
+2022-02-02 12:55:56 - [TEST_STEP][PASSED] - Tier_name = getText(findTestObject("Object Repository/Universal Staging/Tier Namee"), CONTINUE_ON_FAILURE): Text of object 'Object Repository/Universal Staging/Tier Namee' is: 'MOVIE STAR'
+
+2022-02-02 12:55:56 - [MESSAGE][PASSED] - Text of object 'Object Repository/Universal Staging/Tier Namee' is: 'MOVIE STAR'
+
+2022-02-02 12:55:56 - [TEST_STEP][PASSED] - out.println("Welcome " + User_name): null
+
+2022-02-02 12:55:56 - [TEST_STEP][PASSED] - out.println("you are in " + Tier_name): null
+
+2022-02-02 12:55:56 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+2022-02-02 12:55:56 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|/home/knoldus/git/Universal-Auto/Reports/20220202_124732/Contest Entryy/Contest Entry/20220202_124741/1643786756819.png]]
+
+2022-02-02 12:55:56 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Universal/Login/TC-1 Login with Moviestar' successfully
+
+2022-02-02 12:55:56 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2022-02-02 12:56:01 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2022-02-02 12:56:01 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Universal Staging/a_Rewards")): Object: 'Object Repository/Universal Staging/a_Rewards' is clicked on
+
+2022-02-02 12:56:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Universal Staging/a_Rewards' is clicked on
+
+2022-02-02 12:56:02 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("Object Repository/Reward page/Page_Universal All-Access Rewards  Get Rewa_700d57/div_Show All"), 0, STOP_ON_FAILURE): Scroll to object 'Object Repository/Reward page/Page_Universal All-Access Rewards  Get Rewa_700d57/div_Show All' successfully
+
+2022-02-02 12:56:02 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-02-02 12:56:02 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Reward page/Page_Universal All-Access Rewards  Get Rewa_700d57/div_Show All' successfully
+
+2022-02-02 12:56:02 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Reward page/Page_Universal All-Access Rewards  Get Rewa_700d57/div_Show All")): Object: 'Object Repository/Reward page/Page_Universal All-Access Rewards  Get Rewa_700d57/div_Show All' is clicked on
+
+2022-02-02 12:56:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Reward page/Page_Universal All-Access Rewards  Get Rewa_700d57/div_Show All' is clicked on
+
+2022-02-02 12:56:03 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Reward page/Page_Universal All-Access Rewards  Get Rewa_700d57/span_Digital")): Object: 'Object Repository/Reward page/Page_Universal All-Access Rewards  Get Rewa_700d57/span_Digital' is clicked on
+
+2022-02-02 12:56:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Reward page/Page_Universal All-Access Rewards  Get Rewa_700d57/span_Digital' is clicked on
+
+2022-02-02 12:56:04 - [TEST_STEP][PASSED] - scrollToPosition(999, 999, CONTINUE_ON_FAILURE): Browser is scrolled to position x = 999, y = 999
+
+2022-02-02 12:56:04 - [MESSAGE][PASSED] - Browser is scrolled to position x = 999, y = 999
+
+2022-02-02 12:56:04 - [TEST_STEP][PASSED] - if (verifyTextPresent(short_des, true, CONTINUE_ON_FAILURE)): null
+
+2022-02-02 12:56:04 - [MESSAGE][PASSED] - Text 'F9: The Fast Saga' is present on page  using regular expression
+
+2022-02-02 12:56:04 - [TEST_STEP][PASSED] - if (verifyTextPresent(long_des, true, CONTINUE_ON_FAILURE)): null
+
+2022-02-02 12:56:05 - [MESSAGE][PASSED] - Text '"The Armadillo" Video Conferencing Background' is present on page  using regular expression
+
+2022-02-02 12:56:05 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Universal-Contest entry/Reedem now button")): Object: 'Object Repository/Universal-Contest entry/Reedem now button' is clicked on
+
+2022-02-02 12:56:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Universal-Contest entry/Reedem now button' is clicked on
+
+2022-02-02 12:56:05 - [TEST_STEP][PASSED] - result = getText(findTestObject("Object Repository/Universal Staging/Get movie name")): Text of object 'Object Repository/Universal Staging/Get movie name' is: 'Spirit Untamed'
+
+2022-02-02 12:56:10 - [MESSAGE][PASSED] - Text of object 'Object Repository/Universal Staging/Get movie name' is: 'Spirit Untamed'
+
+2022-02-02 12:56:10 - [TEST_STEP][PASSED] - out.println(result): null
+
+2022-02-02 12:56:10 - [TEST_STEP][PASSED] - scrollToElement(findTestObject("Object Repository/Universal Staging/Redeem Now button"), 0, CONTINUE_ON_FAILURE): Scroll to object 'Object Repository/Universal Staging/Redeem Now button' successfully
+
+2022-02-02 12:56:10 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-02-02 12:56:10 - [MESSAGE][PASSED] - Scroll to object 'Object Repository/Universal Staging/Redeem Now button' successfully
+
+2022-02-02 12:56:10 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Universal Staging/Redeem Now button")): Object: 'Object Repository/Universal Staging/Redeem Now button' is clicked on
+
+2022-02-02 12:56:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Universal Staging/Redeem Now button' is clicked on
+
+2022-02-02 12:56:10 - [TEST_STEP][PASSED] - if (verifyElementPresent(findTestObject("Object Repository/Universal Staging/Toast message"), 0, CONTINUE_ON_FAILURE)): null
+
+2022-02-02 12:56:10 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2022-02-02 12:56:11 - [MESSAGE][PASSED] - Object 'Object Repository/Universal Staging/Toast message' is present
+
+2022-02-02 12:56:11 - [TEST_STEP][PASSED] - Toastmessage = getText(findTestObject("Object Repository/Universal Staging/Toast message"), CONTINUE_ON_FAILURE): Text of object 'Object Repository/Universal Staging/Toast message' is: 'Sorry! You’ve already redeemed this reward.'
+
+2022-02-02 12:56:11 - [MESSAGE][PASSED] - Text of object 'Object Repository/Universal Staging/Toast message' is: 'Sorry! You’ve already redeemed this reward.'
+
+2022-02-02 12:56:11 - [TEST_STEP][PASSED] - out.println("Already reedemed  " + Toastmessage): null
+
+2022-02-02 12:56:11 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2022-02-02 12:56:12 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-02-02 12:55:09 - [TEST_SUITE][PASSED] - Contest Entry: Test Cases/Universal/Tc-6- Verify the Contest entry on reward page]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

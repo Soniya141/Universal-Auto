@@ -1,0 +1,16 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Digital Rewards,Firefox 96.0,,,2022-02-02 11:06:48,2022-02-02 11:07:48,59.659s,PASSED
+,,,,,,,
+Test Cases/Universal/Tc-3 Verify the Digital rewards on reward page,Firefox 96.0,Verify the reward on the reward page,,2022-02-02 11:06:48,2022-02-02 11:07:48,59.425s,PASSED
+"callTestCase(findTestCase(""Universal/Login/TC-3 Login with Director""), [""Email"":""test3004@yopmail.com"", ""Pswrd"":""3tl@testing""], CONTINUE_ON_FAILURE)",Firefox 96.0,,,2022-02-02 11:06:49,2022-02-02 11:07:22,33.005s,PASSED
+delay(5),Firefox 96.0,,,2022-02-02 11:07:22,2022-02-02 11:07:27,5.002s,PASSED
+"click(findTestObject(""Object Repository/Reward page/Page_Universal All-Access Rewards  Get Rewa_700d57/a_Rewards""))",Firefox 96.0,,,2022-02-02 11:07:27,2022-02-02 11:07:27,0.381s,PASSED
+"scrollToElement(findTestObject(""Object Repository/Reward page/Page_Universal All-Access Rewards  Get Rewa_700d57/div_Show All""), 0, STOP_ON_FAILURE)",Firefox 96.0,,,2022-02-02 11:07:27,2022-02-02 11:07:27,0.079s,PASSED
+"click(findTestObject(""Object Repository/Reward page/Page_Universal All-Access Rewards  Get Rewa_700d57/div_Show All""))",Firefox 96.0,,,2022-02-02 11:07:27,2022-02-02 11:07:29,1.343s,PASSED
+"click(findTestObject(""Object Repository/Reward page/Page_Universal All-Access Rewards  Get Rewa_700d57/span_Digital""))",Firefox 96.0,,,2022-02-02 11:07:29,2022-02-02 11:07:29,0.551s,PASSED
+"scrollToPosition(999, 999, STOP_ON_FAILURE)",Firefox 96.0,,,2022-02-02 11:07:29,2022-02-02 11:07:29,0.213s,PASSED
+"click(findTestObject(""Object Repository/Reward page/Page_Universal All-Access Rewards  Get Rewa_700d57/div_1K PointsBeethovens Big BreakDigital Mo_cf5511""))",Firefox 96.0,,,2022-02-02 11:07:29,2022-02-02 11:07:30,0.500s,PASSED
+takeScreenshot(),Firefox 96.0,,,2022-02-02 11:07:30,2022-02-02 11:07:30,0.404s,PASSED
+delay(3),Firefox 96.0,,,2022-02-02 11:07:30,2022-02-02 11:07:33,3.002s,PASSED
+"if (verifyTextPresent(Title, true, OPTIONAL))",Firefox 96.0,,,2022-02-02 11:07:33,2022-02-02 11:07:47,13.891s,PASSED
+closeBrowser(),Firefox 96.0,,,2022-02-02 11:07:47,2022-02-02 11:07:48,0.629s,PASSED

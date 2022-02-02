@@ -12,7 +12,7 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>500f3b60-b079-40e3-9c8b-80b36e4afc9c</testSuiteGuid>
    <testCaseLink>
-      <guid>81d45ccd-1913-4f6c-a2eb-9cbe0a398ba5</guid>
+      <guid>bdfd812a-6804-4f60-afa9-bcb3806d56f7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Universal/Tc-6- Verify the Contest entry on reward page</testCaseId>

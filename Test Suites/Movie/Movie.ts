@@ -12,7 +12,7 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>01331af2-3499-475c-856e-c17e35f90f69</testSuiteGuid>
    <testCaseLink>
-      <guid>6edce4d2-79bd-4ecd-a99e-1a5468fd787a</guid>
+      <guid>2b80a78b-3179-436f-b593-fd2163c897c3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Universal/Tc-1 Verify the movies on movie ticket page</testCaseId>

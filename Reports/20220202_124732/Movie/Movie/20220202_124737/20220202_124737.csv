@@ -1,0 +1,12 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Movie,Firefox 96.0,,,2022-02-02 12:50:16,2022-02-02 12:50:57,40.822s,PASSED
+,,,,,,,
+Test Cases/Universal/Tc-1 Verify the movies on movie ticket page,Firefox 96.0,,,2022-02-02 12:50:16,2022-02-02 12:50:57,40.618s,PASSED
+"callTestCase(findTestCase(""Universal/Login/TC-1 Login with Moviestar""), [""Email"":""testing12345@yopmail.com"", ""Pswrd"":""3TL@testing""], STOP_ON_FAILURE)",Firefox 96.0,,,2022-02-02 12:50:17,2022-02-02 12:50:46,29.633s,PASSED
+delay(5),Firefox 96.0,,,2022-02-02 12:50:46,2022-02-02 12:50:51,5.002s,PASSED
+"mouseOver(findTestObject(""Object Repository/Universal Staging/a_Validate Purchase""))",Firefox 96.0,,,2022-02-02 12:50:51,2022-02-02 12:50:52,0.222s,PASSED
+"click(findTestObject(""Object Repository/Universal Staging/a_Movie Ticket""))",Firefox 96.0,,,2022-02-02 12:50:52,2022-02-02 12:50:52,0.311s,PASSED
+"scrollToPosition(999, 999, STOP_ON_FAILURE)",Firefox 96.0,,,2022-02-02 12:50:52,2022-02-02 12:50:52,0.015s,PASSED
+delay(5),Firefox 96.0,,,2022-02-02 12:50:52,2022-02-02 12:50:57,5.002s,PASSED
+"listofelements = findWebElements(findTestObject(""Object Repository/Universal Staging/Movies images""), 10)",Firefox 96.0,,,2022-02-02 12:50:57,2022-02-02 12:50:57,0.074s,PASSED
+for (org.openqa.selenium.WebElement element : listofelements),Firefox 96.0,,,2022-02-02 12:50:57,2022-02-02 12:50:57,0.061s,PASSED

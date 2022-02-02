@@ -12,7 +12,7 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>104b0cf7-94a8-4de5-9b0c-b8b4e9fe59b9</testSuiteGuid>
    <testCaseLink>
-      <guid>77a9fb1b-e8cf-4a8c-89df-eba097a531d9</guid>
+      <guid>8a094bcb-0d3e-44e6-a4c3-456f7884aacb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Universal/Tc-2 Verify the Physical rewards on reward page</testCaseId>
@@ -51,6 +51,12 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>0fe24091-5390-4261-b0de-b2ea8c1333c7</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>bedc83a3-9714-43cc-b622-2e0828cd0910</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

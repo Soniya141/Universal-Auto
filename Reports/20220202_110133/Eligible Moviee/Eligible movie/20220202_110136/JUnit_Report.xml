@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Eligible movie" time="39.393" tests="1" failures="0" errors="0">
+   <testsuite name="Eligible movie" tests="1" failures="0" errors="0" time="39.393" skipped="0" timestamp="2022-02-02 11:04:37" hostname="knoldus - knoldus-Latitude-3520" id="Test Suites/Eligible Moviee/Eligible movie">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="/home/knoldus/git/Universal-Auto/Reports/20220202_110133/Eligible Moviee/Eligible movie/20220202_110136"/>
+         <property name="logFiles" value="/home/knoldus/git/Universal-Auto/Reports/20220202_110133/Eligible Moviee/Eligible movie/20220202_110136/execution0.log"/>
+         <property name="attachments" value="/home/knoldus/git/Universal-Auto/Reports/20220202_110133/Eligible Moviee/Eligible movie/20220202_110136/1643780110864.png, /home/knoldus/git/Universal-Auto/Reports/20220202_110133/Eligible Moviee/Eligible movie/20220202_110136/1643780116295.png"/>
+         <property name="hostName" value="knoldus - knoldus-Latitude-3520"/>
+         <property name="os" value="Linux 64bit"/>
+         <property name="katalonVersion" value="8.2.0.208"/>
+         <property name="browser" value="Firefox 96.0"/>
+         <property name="hostAddress" value="127.0.1.1"/>
+         <property name="sessionId" value="1ebd0f60-1134-42f8-87d8-7c84cc5ff562"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Linux"/>
+      </properties>
+      <testcase name="Test Cases/Universal/Tc-5 Verify the movies on Eligible page" time="39.042" classname="Test Cases/Universal/Tc-5 Verify the movies on Eligible page" status="PASSED">
+         <system-out><![CDATA[2022-02-02 11:04:37 - [TEST_CASE][PASSED] - Test Cases/Universal/Tc-5 Verify the movies on Eligible page: Test Cases/Universal/Tc-5 Verify the movies on Eligible page
+
+2022-02-02 11:04:38 - [TEST_STEP][PASSED] - callTestCase(findTestCase("Universal/Login/TC-2 Login with Screenwriter"), ["Email":"ankit248@yopmail.com", "Pswrd":"3TL@testing"], STOP_ON_FAILURE): Call Test Case 'Test Cases/Universal/Login/TC-2 Login with Screenwriter' successfully
+
+2022-02-02 11:04:38 - [TEST_CASE][PASSED] - Test Cases/Universal/Login/TC-2 Login with Screenwriter: Test Cases/Universal/Login/TC-2 Login with Screenwriter
+
+2022-02-02 11:04:38 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2022-02-02 11:04:38 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2022-02-02 11:04:38 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-02-02 11:04:41 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2022-02-02 11:04:41 - [TEST_STEP][PASSED] - setViewPortSize(1920, 1080): Viewport is set to new size with width = 1920 and height = 1080
+
+2022-02-02 11:04:41 - [MESSAGE][PASSED] - Viewport is set to new size with width = 1920 and height = 1080
+
+2022-02-02 11:04:41 - [TEST_STEP][PASSED] - navigateToUrl(url): Navigate to 'https://universal.3tlstaging.com/home' successfully
+
+2022-02-02 11:05:01 - [MESSAGE][PASSED] - Navigate to 'https://universal.3tlstaging.com/home' successfully
+
+2022-02-02 11:05:01 - [TEST_STEP][PASSED] - delay(5): Delayed 5 second(s)
+
+2022-02-02 11:05:06 - [MESSAGE][PASSED] - Delayed 5 second(s)
+
+2022-02-02 11:05:06 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2022-02-02 11:05:07 - [MESSAGE][PASSED] - Current window maximized
+
+2022-02-02 11:05:07 - [TEST_STEP][PASSED] - if (verifyTextPresent("REGISTER / LOGIN", true, STOP_ON_FAILURE)): null
+
+2022-02-02 11:05:07 - [MESSAGE][PASSED] - Text 'REGISTER / LOGIN' is present on page  using regular expression
+
+2022-02-02 11:05:07 - [TEST_STEP][PASSED] - click(findTestObject("Universal Staging/a_Register  Login")): Object: 'Object Repository/Universal Staging/a_Register  Login' is clicked on
+
+2022-02-02 11:05:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Universal Staging/a_Register  Login' is clicked on
+
+2022-02-02 11:05:08 - [TEST_STEP][PASSED] - setText(findTestObject("Universal Staging/input_USERNAME OR EMAIL_mat-input-0"), Email): Text 'ankit248@yopmail.com' is set on object 'Object Repository/Universal Staging/input_USERNAME OR EMAIL_mat-input-0'
+
+2022-02-02 11:05:08 - [MESSAGE][PASSED] - Text 'ankit248@yopmail.com' is set on object 'Object Repository/Universal Staging/input_USERNAME OR EMAIL_mat-input-0'
+
+2022-02-02 11:05:08 - [TEST_STEP][PASSED] - setText(findTestObject("Universal Staging/input_PASSWORD_mat-input-1"), Pswrd): Text '3TL@testing' is set on object 'Object Repository/Universal Staging/input_PASSWORD_mat-input-1'
+
+2022-02-02 11:05:08 - [MESSAGE][PASSED] - Text '3TL@testing' is set on object 'Object Repository/Universal Staging/input_PASSWORD_mat-input-1'
+
+2022-02-02 11:05:08 - [TEST_STEP][PASSED] - click(findTestObject("Universal Staging/button_Login")): Object: 'Object Repository/Universal Staging/button_Login' is clicked on
+
+2022-02-02 11:05:08 - [MESSAGE][PASSED] - Object: 'Object Repository/Universal Staging/button_Login' is clicked on
+
+2022-02-02 11:05:08 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2022-02-02 11:05:10 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2022-02-02 11:05:10 - [TEST_STEP][PASSED] - User_name = getText(findTestObject("Object Repository/Universal Staging/Tier Name")): Text of object 'Object Repository/Universal Staging/Tier Name' is: 'Ankit Kumar'
+
+2022-02-02 11:05:10 - [MESSAGE][PASSED] - Text of object 'Object Repository/Universal Staging/Tier Name' is: 'Ankit Kumar'
+
+2022-02-02 11:05:10 - [TEST_STEP][PASSED] - Tier_name = getText(findTestObject("Object Repository/Universal Staging/Tier Namee"), CONTINUE_ON_FAILURE): Text of object 'Object Repository/Universal Staging/Tier Namee' is: 'SCREENWRITER'
+
+2022-02-02 11:05:10 - [MESSAGE][PASSED] - Text of object 'Object Repository/Universal Staging/Tier Namee' is: 'SCREENWRITER'
+
+2022-02-02 11:05:10 - [TEST_STEP][PASSED] - out.println("Welcome " + User_name): null
+
+2022-02-02 11:05:10 - [TEST_STEP][PASSED] - out.println("you are in " + Tier_name): null
+
+2022-02-02 11:05:10 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+2022-02-02 11:05:11 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|/home/knoldus/git/Universal-Auto/Reports/20220202_110133/Eligible Moviee/Eligible movie/20220202_110136/1643780110864.png]]
+
+2022-02-02 11:05:11 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/Universal/Login/TC-2 Login with Screenwriter' successfully
+
+2022-02-02 11:05:11 - [TEST_STEP][PASSED] - mouseOver(findTestObject("Object Repository/eligible movie/Page_Universal All-Access Rewards  Get Rewa_700d57/a_Validate Purchase")): Object: 'Object Repository/eligible movie/Page_Universal All-Access Rewards  Get Rewa_700d57/a_Validate Purchase' is hovered
+
+2022-02-02 11:05:11 - [MESSAGE][PASSED] - Object: 'Object Repository/eligible movie/Page_Universal All-Access Rewards  Get Rewa_700d57/a_Validate Purchase' is hovered
+
+2022-02-02 11:05:11 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/eligible movie/Page_Universal All-Access Rewards  Get Rewa_700d57/a_Eligible Movies")): Object: 'Object Repository/eligible movie/Page_Universal All-Access Rewards  Get Rewa_700d57/a_Eligible Movies' is clicked on
+
+2022-02-02 11:05:11 - [MESSAGE][PASSED] - Object: 'Object Repository/eligible movie/Page_Universal All-Access Rewards  Get Rewa_700d57/a_Eligible Movies' is clicked on
+
+2022-02-02 11:05:11 - [TEST_STEP][PASSED] - delay(2): Delayed 2 second(s)
+
+2022-02-02 11:05:13 - [MESSAGE][PASSED] - Delayed 2 second(s)
+
+2022-02-02 11:05:13 - [TEST_STEP][PASSED] - scrollToPosition(999, 999, CONTINUE_ON_FAILURE): Browser is scrolled to position x = 999, y = 999
+
+2022-02-02 11:05:13 - [MESSAGE][PASSED] - Browser is scrolled to position x = 999, y = 999
+
+2022-02-02 11:05:13 - [TEST_STEP][PASSED] - if (verifyTextPresent(title, true)): null
+
+2022-02-02 11:05:14 - [MESSAGE][PASSED] - Text 'Halloween Kills' is present on page  using regular expression
+
+2022-02-02 11:05:14 - [TEST_STEP][PASSED] - Movie_validation = verifyTextPresent(Validation_type, true): Text 'Product Insert Code' is present on page  using regular expression
+
+2022-02-02 11:05:15 - [MESSAGE][PASSED] - Text 'Product Insert Code' is present on page  using regular expression
+
+2022-02-02 11:05:15 - [TEST_STEP][PASSED] - Movie_format = verifyTextPresent(format, true): Text '4K' is present on page  using regular expression
+
+2022-02-02 11:05:15 - [MESSAGE][PASSED] - Text '4K' is present on page  using regular expression
+
+2022-02-02 11:05:15 - [TEST_STEP][PASSED] - Movie_UPC = verifyTextPresent(UPC, true): Text '1-9132-92112-5-0' is present on page  using regular expression
+
+2022-02-02 11:05:16 - [MESSAGE][PASSED] - Text '1-9132-92112-5-0' is present on page  using regular expression
+
+2022-02-02 11:05:16 - [TEST_STEP][PASSED] - Movie_name = getText(findTestObject("Object Repository/Universal Staging/Eligible movie name")): Text of object 'Object Repository/Universal Staging/Eligible movie name' is: 'Halloween Kills
+Product Insert Code
+4K
+1-9132-92112-5-0'
+
+2022-02-02 11:05:16 - [MESSAGE][PASSED] - Text of object 'Object Repository/Universal Staging/Eligible movie name' is: 'Halloween Kills
+Product Insert Code
+4K
+1-9132-92112-5-0'
+
+2022-02-02 11:05:16 - [TEST_STEP][PASSED] - out.println("Eligible movie name " + Movie_name): null
+
+2022-02-02 11:05:16 - [TEST_STEP][PASSED] - takeScreenshot(): Taking screenshot successfully
+
+2022-02-02 11:05:16 - [MESSAGE][PASSED] - Taking screenshot successfully
+[[ATTACHMENT|/home/knoldus/git/Universal-Auto/Reports/20220202_110133/Eligible Moviee/Eligible movie/20220202_110136/1643780116295.png]]
+
+2022-02-02 11:05:16 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2022-02-02 11:05:16 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-02-02 11:04:37 - [TEST_SUITE][PASSED] - Eligible movie: Test Cases/Universal/Tc-5 Verify the movies on Eligible page]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

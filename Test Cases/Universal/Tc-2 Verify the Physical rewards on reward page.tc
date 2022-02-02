@@ -47,4 +47,11 @@
       <masked>false</masked>
       <name>Toast_msg</name>
    </variable>
+   <variable>
+      <defaultValue>'SWITCH TO  ADD P.O.  BOX ADDRESS'</defaultValue>
+      <description></description>
+      <id>bedc83a3-9714-43cc-b622-2e0828cd0910</id>
+      <masked>false</masked>
+      <name>message</name>
+   </variable>
 </TestCaseEntity>

@@ -18,15 +18,16 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Universal/Login/TC-3 Login with Director'), [('Email') : 'test3004@yopmail.com', ('Pswrd') : '3tl@testing'], 
-    FailureHandling.CONTINUE_ON_FAILURE)
+    FailureHandling.OPTIONAL)
 WebUI.delay(5)
 WebUI.click(findTestObject('Object Repository/Universal Staging/a_Rewards'))
-//WebUI.waitForPageLoad(2)
+WebUI.waitForPageLoad(2)
 
-
-WebUI.scrollToElement(findTestObject('Object Repository/Universal Staging/div_Show All'), 4)
+WebUI.scrollToElement(findTestObject('Object Repository/Reward page/Page_Universal All-Access Rewards  Get Rewa_700d57/div_Show All'),
+	0, FailureHandling.STOP_ON_FAILURE)
+//WebUI.scrollToElement(findTestObject('Object Repository/Universal Staging/div_Show All'), 4)
 WebUI.click(findTestObject('Object Repository/Universal Staging/div_Show All'))
-//WebUI.delay(2)
+WebUI.delay(2)
 WebUI.click(findTestObject('Object Repository/Universal Staging/span_Physical'))
 //WebUI.scrollToPosition(9999, 9999, FailureHandling.STOP_ON_FAILURE)
 //WebUI.delay(3)
@@ -42,18 +43,20 @@ WebUI.click(findTestObject('Object Repository/Universal Staging/span_Physical'))
 	//WebUI.scrollToPosition(999, 999, FailureHandling.STOP_ON_FAILURE)
 	WebUI.click(findTestObject('Object Repository/Universal Staging/Redeem Now button'))
       WebUI.delay(2)
-		if (WebUI.verifyTextPresent(popup_message, true, FailureHandling.CONTINUE_ON_FAILURE)) {
-        System.out.println('Already reedemed')
-		} else {
-        System.out.println('Successfully reedemed')
+	}else {
+	     WebUI.verifyElementPresent(findTestObject('Object Repository/Universal Staging/Toast message'), 0, FailureHandling.CONTINUE_ON_FAILURE) 
+		  //if (WebUI.verifyTextPresent(popup_message, true, FailureHandling.CONTINUE_ON_FAILURE)) {
+		  Toastmessage = WebUI.getText(findTestObject('Object Repository/Universal Staging/Toast message'), FailureHandling.CONTINUE_ON_FAILURE)
+
+		  System.out.println('Already reedemed  ' + Toastmessage)
+		
+	  
 		WebUI.takeScreenshot()
 		WebUI.closeBrowser()
-		}
-      }else {
-	  System.out.println('Your testcase has been failed')
-    WebUI.closeBrowser()
-	
+	  
+	   }
+	System.out.println('Your testcase has been failed')
 
 
 
-      }
+WebUI.closeBrowser()

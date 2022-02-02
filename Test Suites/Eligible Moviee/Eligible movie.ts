@@ -12,7 +12,7 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>a1b8e4e4-0a4f-4f1f-bc60-4beca99850e4</testSuiteGuid>
    <testCaseLink>
-      <guid>f00578aa-8975-4624-8dea-50670c7d3ff1</guid>
+      <guid>63a72c31-bf8f-4e7d-b95a-efc41d0ee7f7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Universal/Tc-5 Verify the movies on Eligible page</testCaseId>

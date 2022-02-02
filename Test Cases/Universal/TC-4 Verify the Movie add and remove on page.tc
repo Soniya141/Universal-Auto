@@ -12,4 +12,11 @@
       <masked>false</masked>
       <name>url</name>
    </variable>
+   <variable>
+      <defaultValue>'REWARDS'</defaultValue>
+      <description></description>
+      <id>f7260fea-2766-401f-9cdf-621ae780ee53</id>
+      <masked>false</masked>
+      <name>text</name>
+   </variable>
 </TestCaseEntity>

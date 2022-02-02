@@ -6,21 +6,21 @@
    <comment></comment>
    <testCaseGuid>a0fa452c-9bf8-47f3-9be5-cbaa25b66a23</testCaseGuid>
    <variable>
-      <defaultValue>'https://universal.3tlstaging.com/reward-preview/8be1c7b396cf9d694babd31c3202f0bc-af82151fcf16ec09a9e746d47942c012'</defaultValue>
+      <defaultValue>'https://universal.3tlstaging.com/reward-preview/8be1c7b396cf9d694babd31c3202f0bc-9ef6e6b92d1f5ca1fd4e6cac7d048def'</defaultValue>
       <description></description>
       <id>91aafe07-9948-4a04-80f2-b66bed97bc68</id>
       <masked>false</masked>
       <name>behaviour_id</name>
    </variable>
    <variable>
-      <defaultValue>'Spirit Untamed'</defaultValue>
+      <defaultValue>'F9: The Fast Saga'</defaultValue>
       <description></description>
       <id>406b485e-7baf-4566-8191-277485b51be6</id>
       <masked>false</masked>
       <name>short_des</name>
    </variable>
    <variable>
-      <defaultValue>'Printable Activity Sheets'</defaultValue>
+      <defaultValue>'&quot;The Armadillo&quot; Video Conferencing Background'</defaultValue>
       <description></description>
       <id>eee98b08-7eff-4abb-83fe-2ff1cd43950e</id>
       <masked>false</masked>

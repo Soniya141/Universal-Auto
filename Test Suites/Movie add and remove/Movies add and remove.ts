@@ -22,23 +22,11 @@
          <value></value>
          <variableId>f9357481-f31c-464a-ab7b-74c31a00b439</variableId>
       </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>5be88648-15ef-43fc-a3b4-8f0f73fc2881</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Universal/Tc-7 Verify the remove movie from Earn points page</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>a7d0a339-5caa-4e35-b97c-f8e7b4aa8aae</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>fa15de03-aaaa-4b37-9531-35e0fb2169a3</variableId>
+         <variableId>f7260fea-2766-401f-9cdf-621ae780ee53</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

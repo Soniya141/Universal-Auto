@@ -13,6 +13,7 @@ import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
@@ -23,8 +24,11 @@ WebUI.callTestCase(findTestCase('Universal/Login/TC-2 Login with Screenwriter'),
 
 WebUI.click(findTestObject('Object Repository/triall/Page_Universal All-Access Rewards  Get Rewa_700d57/a_Rewards'))
 
-
-WebUI.scrollToPosition(99999, 99999, FailureHandling.STOP_ON_FAILURE)
+if(WebUI.verifyElementPresent(findTestObject('Object Repository/Universal Staging/Rewards_text'), 0, FailureHandling.CONTINUE_ON_FAILURE)){
+	Assert=WebUI.getText(findTestObject('Object Repository/Universal Staging/Rewards_text'), FailureHandling.CONTINUE_ON_FAILURE)
+	System.out.println("Welcome in  " +Assert)
+}
+	WebUI.scrollToPosition(99999, 99999, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(3)
 
@@ -36,7 +40,7 @@ while (!(WebUI.verifyElementPresent(findTestObject('Universal Staging/All Reward
     WebUI.scrollToPosition(99999, 99999, FailureHandling.STOP_ON_FAILURE)
 
     
-    WebUI.click(findTestObject('Universal-Contest entry/View More button'))
+   if( WebUI.click(findTestObject('Universal-Contest entry/View More button'))) {
 
     WebUI.delay(3)
 
@@ -44,5 +48,5 @@ while (!(WebUI.verifyElementPresent(findTestObject('Universal Staging/All Reward
 	WebUI.takeFullPageScreenshot()
 			WebUI.closeBrowser()
 			
-
+}
 
