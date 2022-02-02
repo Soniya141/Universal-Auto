@@ -39,7 +39,7 @@ WebUI.scrollToPosition(999, 999, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Object Repository/Reward page/Page_Universal All-Access Rewards  Get Rewa_700d57/div_1K PointsBeethovens Big BreakDigital Mo_cf5511'))
 
-WebUI.takeScreenshot()
+
 
 WebUI.delay(3)
 

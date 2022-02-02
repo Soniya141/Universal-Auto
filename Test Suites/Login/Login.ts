@@ -5,7 +5,7 @@
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
-   <numberOfRerun>1</numberOfRerun>
+   <numberOfRerun>0</numberOfRerun>
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>76a27bdb-5fa2-4652-9128-87e9d59b20f1</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Universal/Login/TC-1 Login with Moviestar</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -38,7 +38,7 @@
    <testCaseLink>
       <guid>8a6ee636-d0e1-4a05-b84e-108b48a615d3</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Universal/Login/TC-3 Login with Director</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -56,7 +56,7 @@
    <testCaseLink>
       <guid>c3b24039-6a49-40f9-8110-915778615d85</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Universal/Login/TC-2 Login with Screenwriter</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -74,7 +74,7 @@
    <testCaseLink>
       <guid>253cb894-cb9e-411d-9bc4-435c2bff5e62</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Universal/Login/TC-4 Login with Extra</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -87,6 +87,33 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>a8f43b2d-1f27-484a-a740-5e374e46ce70</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e360edb7-d430-43cb-b591-2f11717bd3ef</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Universal/Login/Login with Users</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>1d48bd36-cf2f-4054-bfa8-506a75533af4</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Loginn</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>1d48bd36-cf2f-4054-bfa8-506a75533af4</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Email</value>
+         <variableId>0d88614c-46db-4f05-b34f-c56c206ab7d4</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>1d48bd36-cf2f-4054-bfa8-506a75533af4</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Pswrd</value>
+         <variableId>ecc2f645-a42f-4287-86b5-3598d9f00f56</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>
