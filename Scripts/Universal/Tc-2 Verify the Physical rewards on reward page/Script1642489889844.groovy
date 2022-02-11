@@ -13,6 +13,11 @@ import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import java.util.concurrent.TimeUnit
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
@@ -34,7 +39,7 @@ WebUI.click(findTestObject('Object Repository/Universal Staging/span_Physical'))
 
 	if (WebUI.verifyTextPresent(short_des, true, FailureHandling.CONTINUE_ON_FAILURE)) {
 		WebUI.navigateToUrl(url + reward_cat + behavior_id)
-   //WebUI.delay(3)
+   WebUI.delay(3)
    
 	//WebUI.delay(5)
 	result = WebUI.getText(findTestObject('Object Repository/Universal Staging/Get movie name'))
@@ -42,21 +47,24 @@ WebUI.click(findTestObject('Object Repository/Universal Staging/span_Physical'))
 		WebUI.scrollToElement(findTestObject('Object Repository/Universal Staging/Redeem Now button'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 	//WebUI.scrollToPosition(999, 999, FailureHandling.STOP_ON_FAILURE)
 	WebUI.click(findTestObject('Object Repository/Universal Staging/Redeem Now button'))
-      WebUI.delay(2)
+   
+	  
+	  
+	  
 	}else {
 	     WebUI.verifyElementPresent(findTestObject('Object Repository/Universal Staging/Toast message'), 0, FailureHandling.CONTINUE_ON_FAILURE) 
-		  //if (WebUI.verifyTextPresent(popup_message, true, FailureHandling.CONTINUE_ON_FAILURE)) {
+		  
 		  Toastmessage = WebUI.getText(findTestObject('Object Repository/Universal Staging/Toast message'), FailureHandling.CONTINUE_ON_FAILURE)
 
 		  System.out.println('Already reedemed  ' + Toastmessage)
 		
 	  
 		WebUI.takeScreenshot()
-		WebUI.closeBrowser()
+		//WebUI.closeBrowser()
 	  
 	   }
 	System.out.println('Your testcase has been failed')
 
 
 
-WebUI.closeBrowser()
+//WebUI.closeBrowser()

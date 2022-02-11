@@ -24,8 +24,7 @@ WebUI.delay(3)
 
 WebUI.click(findTestObject('Object Repository/Universal Staging/Earn points page'))
 
-//WebUI.click(findTestObject('Object Repository/Universal Staging/Earn point popups'), FailureHandling.CONTINUE_ON_FAILURE)
-//WebUI.dismissAlert()
+
 WebUI.scrollToPosition(99999, 99999, FailureHandling.CONTINUE_ON_FAILURE)
 
 while (!(WebUI.verifyElementPresent(findTestObject('Object Repository/Universal Staging/Earn points all shown button'), 

@@ -38,9 +38,7 @@ WebUI.mouseOver(findTestObject('Object Repository/Universal Staging/a_Validate P
 
 WebUI.click(findTestObject('Object Repository/Universal Staging/a_Movie Ticket'))
 
-//WebUI.click(findTestObject('Object Repository/demo/Page_Universal All-Access Rewards  Get Rewa_700d57/a_Validate Purchase'))
-//WebUI.scrollToElement(findTestObject('Object Repository/demo/Page_Universal All-Access Rewards  Get Rewa_700d57/img_Regal Movie Tickets Eligible for Points_debac9', 0, FailureHandling.CONTINUE_ON_FAILURE))
-//WebUI.click(findTestObject('Object Repository/demo/Page_Universal All-Access Rewards  Get Rewa_700d57/img_Regal Movie Tickets Eligible for Points_debac9'))
+
 WebUI.scrollToPosition(999, 999, FailureHandling.STOP_ON_FAILURE)
 
 
@@ -53,7 +51,5 @@ for(WebElement element :listofelements) {
 		//System.out.println("Your movie name is " +element.getAttribute('alt'))
 	}
 
-//WebUI.verify(findTestObject('Object Repository/demo/Page_Universal All-Access Rewards  Get Rewa_700d57/img_Regal Movie Tickets Eligible for Points_debac9'), 0)
-//WebUI.takeElementScreenshot(findTestObject('Object Repository/demo/Page_Universal All-Access Rewards  Get Rewa_700d57/img_Regal Movie Tickets Eligible for Points_debac9'), '/home/knoldus/Katalon Studio/h.png', FailureHandling.STOP_ON_FAILURE)
-//WebUI.takeScreenshot('/home/knoldus/Katalon Studio/hm.png')
+WebUI.takeScreenshot()
 
